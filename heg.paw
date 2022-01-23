@@ -1,0 +1,2318 @@
+DEFAULTS
+{
+	CHARSET: 1;
+	INK: 7;
+	PAPER: 0;
+	FLASH: 0;
+	BRIGHT: 0;
+	INVERSE: 0;
+	OVER: 0;
+	BORDER: 0;
+}
+
+LOCATION 0
+{
+	"{19}{1}{17}{1}Copyright {127} 1992 Philip Gleghorn^^";
+}
+
+LOCATION 1
+{
+	"{16}{2}Observation Dome^^{16}{7}A door leads east into a corridor.^^";
+	CONNECTIONS { E TO 47 };
+}
+
+LOCATION 2
+{
+	"{16}{2}Main Airlock{16}{7}^^An airlock set into the north wall, pressure doors (which lock automatically when the airlock is open) provide exits to the east and to the west.^^Along the south wall is a row of vac-suits, all locked together.";
+	CONNECTIONS { E TO 3 W TO 27 };
+}
+
+LOCATION 3
+{
+	"{16}{2}Screening Room^^{16}{7}The exits from here are east, and the west back into the airlock.^^Emerging from one wall to exit through the opposite, thin beams of light bisect the room.";
+	CONNECTIONS { W TO 2 E TO 4 };
+}
+
+LOCATION 4
+{
+	"{16}{2}Reception^^{16}{7}A few cheap chairs line the north wall, facing towards a large desk which juts from the east wall.^^To the west is the screening room, while south leads into a corridor.";
+	CONNECTIONS { W TO 3 S TO 5 };
+}
+
+LOCATION 5
+{
+	"{16}{2}Corridor Junction{16}{7}^^The corridor goes four different ways from here. To the south is a large room from which you can hear people talking. ^^East is the restaurant, north is the reception and there is a door in the west wall.";
+	CONNECTIONS { N TO 4 S TO 7 E TO 6 };
+}
+
+LOCATION 6
+{
+	"{16}{2}The Restaurant^^{16}{7}A relaxing atmosphere is created here by the soothing music and a tremendous view through a window.^^Several tables and chairs occupy the floor. Exits are north, west and south.";
+	CONNECTIONS { W TO 5 N TO 20 };
+}
+
+LOCATION 7
+{
+	"{16}{2}Dome^^{16}{7}Through a huge transparent dome-like ceiling you can see the stars and the Earth shining, which bathes this enormous room in pale unearthly light.^^You can go north, west and south. There are some people in the centre of the room.";
+	CONNECTIONS { N TO 5 };
+}
+
+LOCATION 8
+{
+	"{16}{2}Ventilation Shaft{16}{7}^^You are in the cramped confines of a ventilation shaft.^^To the north is the airlock, while the shaft branches off south, east and west.";
+}
+
+LOCATION 9
+{
+	"{16}{2}Ventilation Shaft{16}{7}^^The shaft continues in all directions.^^A waft of warm air surges up the shaft as well as the distant hum of machinery.";
+}
+
+LOCATION 10
+{
+	"{16}{2}Ventilation Shaft{16}{7}^^The shaft turns east, and comes to an abrupt end. Air wafts up over you, bringing the occasional flurry of dust. ^^Light streams in from an opening in the floor of the shaft. The only exit is west.";
+}
+
+LOCATION 11
+{
+	"{16}{2}Store Room^^{16}{7}You are in a dimly-lit store room whose area is taken up with boxes and shelves. There is a guard sleeping in a chair here.^^You can go up, or through doors east and north.";
+	CONNECTIONS { U TO 10 };
+}
+
+LOCATION 12
+{
+	"{16}{2}Security-Chamber{16}{7}^^You are in a small, neat room. A door leads west back into the airlock.^^In the opposite wall a corridor leads off to the east.^^A small alcove here houses a computer terminal.";
+	CONNECTIONS { W TO 44 };
+}
+
+LOCATION 13
+{
+	"{20}{1}TITAN CUSTOM MAINFRAME #103/VACC^^{20}{0}";
+}
+
+LOCATION 14
+{
+	"{16}{2}Ventilation Shaft^^{16}{7}Indistinguishable from the others, this part of the shaft leads off in all directions.^^The air is much warmer here and the mechanical sound is clearyly louder.";
+}
+
+LOCATION 15
+{
+	"{16}{2}Sub-Chamber{16}{7}^^Years of disuse have left this chamber is a state of abandonment, with thick dust on everything.^^Some stairs lead up and there is a door east.";
+	CONNECTIONS { U TO 18 E TO 28 };
+}
+
+LOCATION 16
+{
+	"{16}{2}Office/Reception Ante-Chamber^{16}{3}^The lights are out...";
+}
+
+LOCATION 17
+{
+	"{16}{2}Servicing Point{16}{7}^^A metal ladder is fixed to one wall of this small sub-compartment. ^^The heat and noise are coming from a wall of machinery here.";
+	CONNECTIONS { U TO 14 };
+}
+
+LOCATION 18
+{
+	"{16}{2}Observation Dome^^{16}{7}A door east leads into the waiting room, and south will take you to a corridor junction.^^The Moon surface is bright through the transparent north-west wall. You can hear a strange faraway humming noise.";
+	CONNECTIONS { E TO 27 S TO 31 };
+}
+
+LOCATION 19
+{
+	"{16}{2}Office/Reception Ante-Chamber{16}{7}^^You are standing in the area behind the reception desk. Luckily there is no-one here. ^^Your torchlight shows the room to be fairly empty apart from a computer console, a chair & desk, a filing cabinet and a door leading north.";
+	CONNECTIONS { N TO 30 };
+}
+
+LOCATION 20
+{
+	"{16}{2}Observation Dome^^{16}{7}A door leads south into the restaurant.^^";
+	CONNECTIONS { S TO 6 };
+}
+
+LOCATION 21
+{
+	"{16}{2}Guard Room{16}{7}^^Stubbed out cigarette butts on the floor and a simple table with chairs decorate this room. A desk runs around the perimiter, on top of which there are some control panels.^^There are doors east and south.";
+	CONNECTIONS { E TO 5 };
+}
+
+LOCATION 22
+{
+	"{16}{2}Outside The Airlock^^{16}{7}You are standing before another airlock, leading north into the second complex on this side of the Moon.^^Difficult terrain blocks all paths away from here save for one to the west.";
+	CONNECTIONS { W TO 43 };
+}
+
+LOCATION 23
+{
+	"{16}{2}The Govenor's Office{16}{7}^^You are in the office belonging to the Govenor of this establishment.^^A huge, red leather-topped desk sits in the middle of the floor, behind which is an enormous swivel-chair.^^A door leads north.";
+}
+
+LOCATION 24
+{
+	"{16}{2}Outside The Airlock^^{16}{7}An airlock behind you leads back into the complex, whereas the bright, jagged surface of the Moon lies before you.^^You can go east, west, north or south through the airlock.";
+	CONNECTIONS { E TO 33 N TO 38 W TO 32 };
+}
+
+LOCATION 25
+{
+	"{16}{2}Prison{16}{7}^^You have been incarcerated in the Titan Station's high security prison, under suspicion of being a terrorist.^^The featureless cell and energy barrier ensure that you are going nowhere.";
+}
+
+LOCATION 26
+{
+	"";
+}
+
+LOCATION 27
+{
+	"{16}{2}Waiting Room^^{16}{7}Graced with a splendid view over the nearby crater, and soothing music over hidden speakers, this room is very luxurious to say the least.^^Tables and chairs take up the floor space. Doors are east and west.";
+	CONNECTIONS { E TO 2 W TO 18 };
+}
+
+LOCATION 28
+{
+	"{16}{2}Sub-Chamber^^{16}{7}Various pipes enter through one wall of this dank sub-chamber, to leave via the opposite.^^A musty smell permeates everything and the sound of dripping water chills you.^^The only exit is west.";
+	CONNECTIONS { W TO 15 };
+}
+
+LOCATION 29
+{
+	"";
+	CONNECTIONS { N TO 27 };
+}
+
+LOCATION 30
+{
+	"{16}{2}Office{16}{7}^^A notice board and a telephone, which is fixed to the wall, provide the only decoration in this room.^^There is a solitary door in the south wall.";
+}
+
+LOCATION 31
+{
+	"{16}{2}Corridor Junction{16}{7}^^The corridor continues on to the south for about ten metres before sharply turning west into another branch.^^You can, therefore, only go north or west.";
+	CONNECTIONS { N TO 18 W TO 47 };
+}
+
+LOCATION 32
+{
+	"";
+	CONNECTIONS { N TO 39 E TO 24 };
+}
+
+LOCATION 33
+{
+	"";
+	CONNECTIONS { E TO 34 W TO 24 };
+}
+
+LOCATION 34
+{
+	"";
+	CONNECTIONS { N TO 35 W TO 33 E TO 40 };
+}
+
+LOCATION 35
+{
+	"";
+	CONNECTIONS { N TO 36 S TO 34 E TO 41 };
+}
+
+LOCATION 36
+{
+	"";
+	CONNECTIONS { S TO 35 };
+}
+
+LOCATION 37
+{
+	"";
+	CONNECTIONS { N TO 42 W TO 38 };
+}
+
+LOCATION 38
+{
+	"";
+	CONNECTIONS { E TO 37 S TO 24 };
+}
+
+LOCATION 39
+{
+	"";
+	CONNECTIONS { N TO 41 W TO 40 S TO 32 };
+}
+
+LOCATION 40
+{
+	"";
+	CONNECTIONS { E TO 39 W TO 34 };
+}
+
+LOCATION 41
+{
+	"";
+	CONNECTIONS { N TO 43 S TO 39 W TO 35 };
+}
+
+LOCATION 42
+{
+	"";
+	CONNECTIONS { S TO 37 };
+}
+
+LOCATION 43
+{
+	"";
+	CONNECTIONS { S TO 41 E TO 22 W TO 36 };
+}
+
+LOCATION 44
+{
+	"{16}{2}Airlock^^{16}{7}You are standing in the airlock of the second complex.^^The main door is to the south, while pressure doors (which lock when the main door is open) lead east and north.";
+	CONNECTIONS { W TO 64 E TO 12 };
+}
+
+LOCATION 45
+{
+	"";
+}
+
+LOCATION 46
+{
+	"";
+	CONNECTIONS { N TO 31 };
+}
+
+LOCATION 47
+{
+	"{16}{2}Corridor^^{16}{7}A guard blocks a door to the north, while one to the south remains unguarded.^^West will take you into another observation dome while east leads into a junction in the corridor.";
+	CONNECTIONS { E TO 31 W TO 1 };
+}
+
+LOCATION 48
+{
+	"{16}{2}Excavation Site^^{16}{7}You are standing in a large, almost cavernous place, with bare rock for walls. It is apparent that a new section of the complex is being built here.^^A long tunnel stretches away to the north, inclining downwards, at the mouth of which, you can see some mining equipment.^^You can go north or south.";
+	CONNECTIONS { S TO 47 N TO 49 };
+}
+
+LOCATION 49
+{
+	"";
+	CONNECTIONS { N TO 50 S TO 48 };
+}
+
+LOCATION 50
+{
+	"";
+	CONNECTIONS { N TO 51 S TO 49 };
+}
+
+LOCATION 51
+{
+	"";
+	CONNECTIONS { S TO 50 };
+}
+
+LOCATION 52
+{
+	"";
+	CONNECTIONS { N TO 53 S TO 51 };
+}
+
+LOCATION 53
+{
+	"";
+	CONNECTIONS { N TO 54 S TO 52 };
+}
+
+LOCATION 54
+{
+	"";
+	CONNECTIONS { S TO 53 };
+}
+
+LOCATION 55
+{
+	"{16}{2}Airlock^^{16}{7}The gleaming airlock to the west seems out of place amidst the strewn bricks and dirt of construction.^^The only other exit is to the south.";
+	CONNECTIONS { S TO 54 };
+}
+
+LOCATION 56
+{
+	"";
+	CONNECTIONS { N TO 29 };
+}
+
+LOCATION 57
+{
+	"";
+}
+
+LOCATION 58
+{
+	"";
+	CONNECTIONS { SE TO 66 SW TO 67 NW TO 66 NE TO 67 };
+}
+
+LOCATION 59
+{
+	"";
+	CONNECTIONS { SE TO 58 NE TO 67 NW TO 66 SW TO 65 };
+}
+
+LOCATION 60
+{
+	"{16}{2}Departure Lounge^^{16}{7}An array of chairs allow tourists to wait for the departure & arrival of flights in comfort.^^Doors are west, north and east.";
+	CONNECTIONS { W TO 12 E TO 71 };
+}
+
+LOCATION 61
+{
+	"{16}{2}Apartment^^{16}{7}You are in an apartment in which it is apparent that someone has been staying. A sofa, television and table are here.^^The bedroom is south, while the corridor is east.";
+	CONNECTIONS { E TO 59 S TO 62 };
+}
+
+LOCATION 62
+{
+	"{16}{2}Bedroom^^{16}{7}Against one wall there is an unmade bed and standing beside it there is a wardrobe.^^A door leads north.";
+	CONNECTIONS { N TO 61 };
+}
+
+LOCATION 63
+{
+	"{16}{2}Medical Room^^{16}{7}The clinically white walls are impeccably clean and the many racks and shelves stand out against them.^^A door leads south.";
+	CONNECTIONS { S TO 64 };
+}
+
+LOCATION 64
+{
+	"{16}{2}Corridor^^{16}{7}To the east a door leads to the main airlock while a door is to the north.";
+	CONNECTIONS { E TO 44 };
+}
+
+LOCATION 65
+{
+	"";
+	CONNECTIONS { SW TO 66 NE TO 69 NW TO 68 SE TO 67 };
+}
+
+LOCATION 66
+{
+	"";
+	CONNECTIONS { NE TO 65 NW TO 58 SE TO 69 SW TO 70 };
+}
+
+LOCATION 67
+{
+	"";
+	CONNECTIONS { NE TO 58 NW TO 65 SE TO 70 SW TO 68 };
+}
+
+LOCATION 68
+{
+	"";
+	CONNECTIONS { NE TO 67 NW TO 65 };
+}
+
+LOCATION 69
+{
+	"";
+	CONNECTIONS { NW TO 66 NE TO 59 };
+}
+
+LOCATION 70
+{
+	"";
+	CONNECTIONS { S TO 60 NE TO 66 NW TO 67 };
+}
+
+LOCATION 71
+{
+	"{16}{2}Departure Gate^^{16}{7}Some stairs lead down towards a gate beside which there are three guards, examining the passports of tourists entering the shuttle.^^The corridor leads west to the departure lounge.";
+	CONNECTIONS { W TO 60 };
+}
+
+LOCATION 72
+{
+	"";
+	CONNECTIONS { N TO 71 };
+}
+
+LOCATION 73
+{
+	"";
+}
+
+LOCATION 74
+{
+	"";
+}
+
+VOCABULARY
+{
+	NOUN 2: "S", "SOUTH";
+	PREPOSITION 2: "TO";
+	CONJUNCTION 2: "AND", "THEN";
+	PRONOUN 2: "IT", "THEM";
+	NOUN 3: "E", "EAST";
+	NOUN 4: "W", "WEST";
+	PREPOSITION 4: "IN", "INTO";
+	NOUN 5: "N", "NORTH";
+	PREPOSITION 5: "OUT", "FROM";
+	NOUN 6: "NW";
+	NOUN 7: "SE";
+	NOUN 8: "SW";
+	PREPOSITION 8: "UNDER";
+	NOUN 9: "NE";
+	NOUN 10: "D", "DOWN";
+	NOUN 11: "U", "UP";
+	NOUN 13: "GO";
+	PREPOSITION 13: "BUT", "EXCEP";
+	NOUN 14: "I", "INVEN";
+	PREPOSITION 16: "Q8T8D";
+	PREPOSITION 17: "ON";
+	VERB 18: "SECUR";
+	PREPOSITION 18: "OFF";
+	VERB 19: "MENU";
+	VERB 20: "GET", "TAKE";
+	NOUN 20: "ALL", "EVERY";
+	VERB 21: "PUT", "DROP";
+	VERB 22: "REMOV";
+	VERB 23: "WEAR";
+	VERB 24: "R", "REDES";
+	VERB 25: "Q", "QUIT";
+	VERB 26: "SAVE";
+	VERB 27: "LOAD";
+	VERB 28: "RAMSA", "STORE";
+	VERB 29: "RAMLO", "RECAL";
+	VERB 30: "X", "XAM", "EXAM", "READ", "EXAMI", "SEARC";
+	VERB 31: "SAY", "TALK";
+	VERB 32: "LISTE";
+	VERB 33: "SIT";
+	VERB 34: "TURN";
+	VERB 35: "L", "LOOK";
+	VERB 36: "UNSCR";
+	VERB 37: "HELP";
+	VERB 39: "UNLOC";
+	VERB 40: "PUSH", "PRESS";
+	VERB 41: "TURNS", "SCORE";
+	VERB 42: "COMMA";
+	VERB 43: "INCOM";
+	VERB 44: "OUTGO";
+	VERB 45: "KICK";
+	VERB 46: "FILL";
+	VERB 47: "ENTER";
+	VERB 48: "CLIMB";
+	VERB 49: "PULL";
+	VERB 50: "INSER";
+	VERB 51: "BEND";
+	NOUN 51: "NOTE";
+	VERB 52: "TYPE";
+	NOUN 52: "FLASH", "TORCH";
+	VERB 53: "WAIT", "INPUT";
+	NOUN 53: "LIGHT";
+	VERB 54: "CALL", "DIAL";
+	NOUN 54: "SUITS";
+	VERB 55: "SWITC";
+	NOUN 55: "GRILL";
+	VERB 56: "CUT";
+	NOUN 56: "BANK", "MACHI";
+	VERB 57: "OPEN";
+	NOUN 57: "SCREW";
+	VERB 58: "CLOSE";
+	NOUN 58: "DOCUM";
+	VERB 59: "DRINK";
+	NOUN 59: "GLASS";
+	VERB 60: "HIT", "KILL", "BREAK", "SMASH", "ATTAC";
+	NOUN 60: "DESK";
+	VERB 61: "JUMP";
+	NOUN 61: "SHUTT";
+	VERB 62: "MODE";
+	NOUN 62: "DISK", "DISC";
+	VERB 63: "LIFT";
+	NOUN 63: "AXE";
+	VERB 64: "KNOCK";
+	NOUN 64: "WHEEL";
+	VERB 65: "PUNCH";
+	NOUN 65: "CABIN", "FILIN";
+	VERB 66: "GIVE";
+	NOUN 66: "FILES";
+	VERB 67: "BURN";
+	NOUN 67: "SUIT", "VACSU";
+	VERB 68: "SLIDE";
+	NOUN 68: "POCKE", "POUCH";
+	VERB 69: "POUR";
+	NOUN 69: "KEY";
+	VERB 70: "FORGE";
+	NOUN 70: "JUNK", "PILE";
+	VERB 71: "INJEC";
+	NOUN 71: "CHAIR";
+	VERB 72: "MIX", "STIR", "SHAKE";
+	NOUN 72: "MONIT", "SCREE";
+	VERB 73: "STAND";
+	NOUN 73: "HOLE";
+	VERB 74: "RELEA";
+	NOUN 74: "MAN", "PEOPL", "PERSO", "TOURI";
+	VERB 75: "ANSWE";
+	NOUN 75: "CHUCK";
+	VERB 76: "FASTE";
+	NOUN 76: "WIRES";
+	VERB 77: "RUB", "WIPE";
+	NOUN 77: "CAMER";
+	VERB 78: "FONT";
+	NOUN 78: "PASS", "PASSP";
+	VERB 79: "SHARP";
+	NOUN 79: "FLOWE";
+	VERB 80: "EXIT";
+	NOUN 80: "DOOR";
+	VERB 81: "TEXT";
+	NOUN 81: "CUTTE", "LASER";
+	VERB 82: "FOLLO";
+	NOUN 82: "PLATE";
+	VERB 83: "CONNE";
+	NOUN 83: "WRITI";
+	VERB 84: "CRAWL";
+	NOUN 84: "BOX", "BOXES";
+	VERB 85: "HIDE";
+	NOUN 85: "WIRE";
+	NOUN 86: "TERMI", "COMPU", "CONSO";
+	NOUN 87: "NOISE", "HUMMI";
+	NOUN 88: "SHELV", "SHELF";
+	NOUN 89: "DRIVE";
+	NOUN 90: "PANEL";
+	NOUN 91: "LADDE", "STAIR";
+	NOUN 92: "SLOT";
+	NOUN 93: "KEYS";
+	NOUN 94: "KG1B2";
+	NOUN 95: "BQP7U";
+	NOUN 96: "KEYHO";
+	NOUN 97: "BRICK";
+	NOUN 98: "BUTTO";
+	NOUN 100: "CARPE";
+	NOUN 101: "KNIFE";
+	NOUN 102: "TABLE";
+	NOUN 103: "TRAP", "TRAPD";
+	NOUN 104: "FLOOR";
+	NOUN 105: "CONTA";
+	NOUN 109: "MUSIC";
+	NOUN 110: "COMPO";
+	NOUN 111: "CASE", "BRIEF", "SUITC";
+	NOUN 112: "GUARD";
+	NOUN 113: "MARK", "ELBOW";
+	NOUN 115: "DATA";
+	NOUN 120: "AIRLO";
+	NOUN 121: "OVERR";
+	NOUN 122: "FLIGH";
+	NOUN 123: "SYSTE";
+	NOUN 124: "LEVEL";
+	NOUN 125: "ALPHA";
+	NOUN 126: "PHONE", "TELEP";
+	ADJECTIVE 127: "FLOPP";
+	ADJECTIVE 128: "BROKE";
+	ADJECTIVE 130: "SMALL";
+	ADJECTIVE 131: "BIG", "LARGE";
+	NOUN 133: "UNIFO";
+	NOUN 134: "WILKE";
+	ADJECTIVE 134: "WHITE";
+	NOUN 135: "71513";
+	NOUN 136: "REMAI";
+	NOUN 137: "LOCKE";
+	NOUN 138: "SHEET", "PIECE", "PAPER";
+	ADJECTIVE 138: "GRAY", "GREY";
+	ADVERB 140: "QUICK";
+	ADJECTIVE 140: "LEATH";
+	NOUN 141: "EQUIP";
+	NOUN 142: "HAMME";
+	ADJECTIVE 142: "VAC", "VACUU";
+	NOUN 143: "CREDI";
+	ADVERB 144: "CAREF", "GENTL", "QUIET";
+	NOUN 144: "BUTT", "CIGAR", "BUTTS";
+	ADVERB 145: "HARD";
+	NOUN 145: "PENCI";
+	ADJECTIVE 145: "RECTA";
+	NOUN 146: "DRAWE";
+	NOUN 147: "VASE";
+	NOUN 148: "NOTIC", "BOARD";
+	NOUN 149: "SCRAP";
+	NOUN 150: "DISPE";
+	NOUN 151: "TAP";
+	ADJECTIVE 151: "BRASS";
+	NOUN 152: "WATER";
+	ADJECTIVE 152: "BURNE", "BURNT";
+	NOUN 153: "CIRCU";
+	ADJECTIVE 153: "YELLO";
+	NOUN 154: "SIGNA";
+	ADJECTIVE 154: "PURPL";
+	NOUN 157: "SYRIN";
+	NOUN 158: "RACK", "RACKS";
+	NOUN 159: "BOTTL";
+	NOUN 160: "BEAKE";
+	NOUN 162: "BODY";
+	NOUN 163: "BATTE";
+	NOUN 164: "TAPE", "VIDEO";
+	NOUN 165: "WALLE";
+	NOUN 166: "JACKE";
+	NOUN 167: "WARDR";
+	NOUN 168: "BED";
+	NOUN 169: "HANDK", "CORNE";
+	NOUN 170: "LOCK";
+	NOUN 171: "02927";
+	NOUN 172: "CATCH";
+	NOUN 173: "HEADB";
+	NOUN 174: "COMPA";
+	NOUN 175: "BELT";
+	NOUN 176: "BOOK";
+	NOUN 177: "1";
+	NOUN 178: "2";
+	NOUN 179: "3";
+	NOUN 180: "4";
+	NOUN 181: "5";
+	NOUN 182: "6";
+	NOUN 183: "7";
+	NOUN 184: "8";
+}
+
+OBJECT 0
+{
+	"A flashlight.";
+	INITIALLYAT NOTCREATED;
+	WORDS FLASH _;
+	WEIGHT 1;
+}
+
+OBJECT 1
+{
+	"A vase.";
+	INITIALLYAT NOTCREATED;
+	WORDS VASE _;
+	WEIGHT 1;
+	PROPERTY CLOTHING, CONTAINER;
+}
+
+OBJECT 2
+{
+	"A flashlight.";
+	INITIALLYAT 20;
+	WORDS FLASH _;
+	WEIGHT 1;
+}
+
+OBJECT 3
+{
+	"Some files.";
+	INITIALLYAT NOTCREATED;
+	WORDS FILES _;
+	WEIGHT 1;
+}
+
+OBJECT 4
+{
+	"A screwdriver.";
+	INITIALLYAT NOTCREATED;
+	WORDS SCREW _;
+	WEIGHT 1;
+}
+
+OBJECT 5
+{
+	"A ventilation grill.";
+	INITIALLYAT NOTCREATED;
+	WORDS GRILL _;
+	WEIGHT 1;
+}
+
+OBJECT 6
+{
+	"A metal panel.";
+	INITIALLYAT NOTCREATED;
+	WORDS PANEL _;
+	WEIGHT 1;
+}
+
+OBJECT 7
+{
+	"A grey vac-suit. ";
+	INITIALLYAT NOTCREATED;
+	WORDS SUIT GRAY;
+	WEIGHT 1;
+	PROPERTY CLOTHING;
+}
+
+OBJECT 8
+{
+	"A small rectangular key.";
+	INITIALLYAT NOTCREATED;
+	WORDS KEY RECTA;
+	WEIGHT 1;
+}
+
+OBJECT 9
+{
+	"A headband.";
+	INITIALLYAT NOTCREATED;
+	WORDS HEADB SMALL;
+	WEIGHT 0;
+	PROPERTY CLOTHING;
+}
+
+OBJECT 10
+{
+	"A passport.";
+	INITIALLYAT NOTCREATED;
+	WORDS PASS _;
+	WEIGHT 1;
+}
+
+OBJECT 11
+{
+	"A wire plate.";
+	INITIALLYAT NOTCREATED;
+	WORDS PLATE _;
+	WEIGHT 1;
+}
+
+OBJECT 12
+{
+	"A thin piece of wire.";
+	INITIALLYAT NOTCREATED;
+	WORDS WIRE _;
+	WEIGHT 1;
+}
+
+OBJECT 13
+{
+	"A pile of junk.";
+	INITIALLYAT NOTCREATED;
+	WORDS JUNK _;
+	WEIGHT 1;
+}
+
+OBJECT 14
+{
+	"A knife.";
+	INITIALLYAT NOTCREATED;
+	WORDS KNIFE _;
+	WEIGHT 1;
+}
+
+OBJECT 15
+{
+	"An open trapdoor.";
+	INITIALLYAT NOTCREATED;
+	WORDS TRAP _;
+	WEIGHT 1;
+}
+
+OBJECT 16
+{
+	"A closed trapdoor.";
+	INITIALLYAT NOTCREATED;
+	WORDS TRAP _;
+	WEIGHT 1;
+}
+
+OBJECT 17
+{
+	"Some documents.";
+	INITIALLYAT NOTCREATED;
+	WORDS DOCUM _;
+	WEIGHT 1;
+}
+
+OBJECT 18
+{
+	"A glass case fixed to the wall.";
+	INITIALLYAT 27;
+	WORDS CASE _;
+	WEIGHT 1;
+}
+
+OBJECT 19
+{
+	"A broken glass case.";
+	INITIALLYAT NOTCREATED;
+	WORDS CASE BROKE;
+	WEIGHT 1;
+}
+
+OBJECT 20
+{
+	"A laser-cutter.";
+	INITIALLYAT NOTCREATED;
+	WORDS CUTTE _;
+	WEIGHT 1;
+}
+
+OBJECT 21
+{
+	"An axe.";
+	INITIALLYAT NOTCREATED;
+	WORDS AXE _;
+	WEIGHT 1;
+}
+
+OBJECT 22
+{
+	"A large container.";
+	INITIALLYAT 28;
+	WORDS CONTA BIG;
+	WEIGHT 1;
+}
+
+OBJECT 23
+{
+	"A floppy disc.";
+	INITIALLYAT NOTCREATED;
+	WORDS DISK FLOPP;
+	WEIGHT 1;
+}
+
+OBJECT 24
+{
+	"A white vac-suit.";
+	INITIALLYAT 55;
+	WORDS SUIT WHITE;
+	WEIGHT 1;
+	PROPERTY CLOTHING;
+}
+
+OBJECT 25
+{
+	"A leather briefcase.";
+	INITIALLYAT NOTCREATED;
+	WORDS CASE LEATH;
+	WEIGHT 1;
+}
+
+OBJECT 26
+{
+	"A brass key.";
+	INITIALLYAT NOTCREATED;
+	WORDS KEY BRASS;
+	WEIGHT 1;
+}
+
+OBJECT 27
+{
+	"A guard's uniform.";
+	INITIALLYAT NOTCREATED;
+	WORDS UNIFO _;
+	WEIGHT 1;
+	PROPERTY CLOTHING;
+}
+
+OBJECT 28
+{
+	"A lighter.";
+	INITIALLYAT NOTCREATED;
+	WORDS LIGHT _;
+	WEIGHT 1;
+}
+
+OBJECT 29
+{
+	"Some burnt remains.";
+	INITIALLYAT NOTCREATED;
+	WORDS REMAI BURNE;
+	WEIGHT 1;
+}
+
+OBJECT 30
+{
+	"Some burning files.";
+	INITIALLYAT NOTCREATED;
+	WORDS FILES _;
+	WEIGHT 1;
+}
+
+OBJECT 31
+{
+	"An open locker.";
+	INITIALLYAT NOTCREATED;
+	WORDS LOCKE _;
+	WEIGHT 1;
+}
+
+OBJECT 32
+{
+	"A locker.";
+	INITIALLYAT 2;
+	WORDS LOCKE _;
+	WEIGHT 1;
+}
+
+OBJECT 33
+{
+	"A sheet of paper.";
+	INITIALLYAT NOTCREATED;
+	WORDS SHEET _;
+	WEIGHT 1;
+}
+
+OBJECT 34
+{
+	"A hammer.";
+	INITIALLYAT NOTCREATED;
+	WORDS HAMME SMALL;
+	WEIGHT 1;
+}
+
+OBJECT 35
+{
+	"One credit.";
+	INITIALLYAT NOTCREATED;
+	WORDS CREDI _;
+	WEIGHT 1;
+}
+
+OBJECT 36
+{
+	"A pencil.";
+	INITIALLYAT NOTCREATED;
+	WORDS PENCI _;
+	WEIGHT 1;
+}
+
+OBJECT 37
+{
+	"A large key.";
+	INITIALLYAT NOTCREATED;
+	WORDS KEY BIG;
+	WEIGHT 1;
+}
+
+OBJECT 38
+{
+	"A vase full of water.";
+	INITIALLYAT NOTCREATED;
+	WORDS VASE _;
+	WEIGHT 1;
+}
+
+OBJECT 39
+{
+	"A water dispenser.";
+	INITIALLYAT 18;
+	WORDS DISPE _;
+	WEIGHT 1;
+}
+
+OBJECT 40
+{
+	"Some circuitry.";
+	INITIALLYAT 57;
+	WORDS CIRCU _;
+	WEIGHT 1;
+}
+
+OBJECT 41
+{
+	"A syringe.";
+	INITIALLYAT NOTCREATED;
+	WORDS SYRIN _;
+	WEIGHT 1;
+}
+
+OBJECT 42
+{
+	"A secret compartment.";
+	INITIALLYAT NOTCREATED;
+	WORDS COMPA _;
+	WEIGHT 1;
+}
+
+OBJECT 43
+{
+	"A yellow bottle.";
+	INITIALLYAT NOTCREATED;
+	WORDS BOTTL YELLO;
+	WEIGHT 1;
+}
+
+OBJECT 44
+{
+	"A purple bottle.";
+	INITIALLYAT NOTCREATED;
+	WORDS BOTTL PURPL;
+	WEIGHT 1;
+}
+
+OBJECT 45
+{
+	"A beaker.";
+	INITIALLYAT 63;
+	WORDS BEAKE _;
+	WEIGHT 1;
+}
+
+OBJECT 46
+{
+	"Some broken glass.";
+	INITIALLYAT NOTCREATED;
+	WORDS GLASS BROKE;
+	WEIGHT 1;
+}
+
+OBJECT 47
+{
+	"A battery.";
+	INITIALLYAT 28;
+	WORDS BATTE _;
+	WEIGHT 1;
+}
+
+OBJECT 48
+{
+	"A videotape.";
+	INITIALLYAT CARRIED;
+	WORDS TAPE _;
+	WEIGHT 1;
+}
+
+OBJECT 49
+{
+	"A wallet.";
+	INITIALLYAT NOTCREATED;
+	WORDS WALLE _;
+	WEIGHT 1;
+}
+
+OBJECT 50
+{
+	"A body.";
+	INITIALLYAT NOTCREATED;
+	WORDS BODY _;
+	WEIGHT 8;
+}
+
+OBJECT 51
+{
+	"A jacket.";
+	INITIALLYAT NOTCREATED;
+	WORDS JACKE _;
+	WEIGHT 1;
+	PROPERTY CLOTHING;
+}
+
+OBJECT 52
+{
+	"A suitcase.";
+	INITIALLYAT 62;
+	WORDS CASE _;
+	WEIGHT 1;
+}
+
+OBJECT 53
+{
+	"A handkerchief.";
+	INITIALLYAT NOTCREATED;
+	WORDS HANDK _;
+	WEIGHT 1;
+}
+
+OBJECT 54
+{
+	"A book.";
+	INITIALLYAT NOTCREATED;
+	WORDS BOOK _;
+	WEIGHT 1;
+}
+
+OBJECT 55
+{
+	"A brick.";
+	INITIALLYAT NOTCREATED;
+	WORDS BRICK _;
+	WEIGHT 1;
+}
+
+OBJECT 56
+{
+	"A vase of flowers.";
+	INITIALLYAT 27;
+	WORDS VASE _;
+	WEIGHT 1;
+}
+
+OBJECT 57
+{
+	"Some flowers.";
+	INITIALLYAT NOTCREATED;
+	WORDS FLOWE _;
+	WEIGHT 1;
+}
+
+OBJECT 58
+{
+	"A chuck.";
+	INITIALLYAT 1;
+	WORDS CHUCK _;
+	WEIGHT 1;
+}
+
+MESSAGES
+{
+	0: "The guard walks towards you and asks to see your ID. ";
+	1: "\"{16}{4}This isn't signed!{16}{5}\" snorts the guard.";
+	2: "A sign on the door reads:^{20}{1}No Entry For Passengers!{20}{0}.";
+	3: "{16}{6}You notice an armed guard a little way along, so you decline to go that way.";
+	4: "{16}{6}In crossing the room you break a beam:^^There is a wailing sound and 3 guards rush in.";
+	5: "The row of suits cover the wall.^Behind them, you can see";
+	6: "{16}{6}You are led, handcuffed, through the complex whereupon you are divulged of your possessions and then released into a cell...";
+	7: "There are some tourists standing at the eastern exit, chatting amongst themselves.";
+	8: "{16}{4}Okay. It falls to the floor.";
+	9: "{16}{6}It refuses to move.";
+	10: "{16}{6} object";
+	11: "{16}{6}It is currently switched on.";
+	12: "{16}{6}One of the tourists says something about how he has forgotten his passport. The group goes east and he goes north.";
+	13: "{16}{5}Okay.^Under the carpet you find a trapdoor.";
+	14: "{16}{2}Corridor^^{16}{7}Doors to the east and west lead into apartments, while corridors to the north-east, north-west, south-east and south-west go elsewhere.";
+	15: " a hole south leading into a ventilation shaft.";
+	16: " a ventilation grill in the wall.";
+	17: "{16}{6}It is currently switched off.";
+	18: "{16}{6}The suits are all locked to the wall.";
+	19: "{16}{4}It is a small hole, puncturing the suit.";
+	20: "{16}{6}^Under strain of vacuum, the damaged suit you are wearing quickly collapses and rips open.";
+	21: "{16}{5}The tannoy system announces the imminent departure of a passenger shuttle bound for Earth.";
+	22: "{16}{6}^The pressure doors lock while the airlock is open.";
+	23: " There is an open door to the west.";
+	24: "{16}{5}You can't wear BOTH!";
+	25: "{16}{6}You panic and run, but are caught by two guards.";
+	26: "^^There is a large hole in the south wall, leading into a ventilation shaft.";
+	27: "{16}{6}\"{16}{4}What the hell do you think you're doing in here!{16}{6}\" He moves towards you and calls for a guard. ";
+	28: "{16}{6}It is full.";
+	29: "{16}{6}Tight-fitting and padded thick. It has many pockets. There is a small mark on the elbow.";
+	30: "{16}{5}It has buttons from 0 to 9. ";
+	31: "A wide aisle leads east and the passenger entrance is north.";
+	32: "{16}{6}It is full.";
+	33: "{16}{6}The shaft is too small for you to be able to walk in.";
+	34: "{16}{6}Which way?";
+	35: "{16}{2}Shuttle^^{16}{7}Rows of luxurious seats, each with their own private TV allow the passengers to enjoy their journey in extreme comfort.^^";
+	36: "{16}{4}There is a woman with her child, who is crying. ";
+	37: "{16}{6}It is empty.";
+	38: "{16}{6}The door looks quite sturdy and has an ordinary keyhole.";
+	39: "A wide aisle leads west into 1st class, while a rear cabin is to the east.";
+	40: "{16}{6}That won't do!";
+	41: "{16}{2}Corridor^^{16}{7}The doors to various apartments are to the east and west, while corridors north-east";
+	42: "{16}{6}It only has an indecipherable bar code and some numbers. ";
+	43: "";
+	44: "{16}{6}It is closed.";
+	45: "{16}{6}nothing.";
+	46: "{16}{6}A sign reads {20}{1} CLOSED {20}{0}.";
+	47: "{16}{6}a pass.";
+	48: "{5}{16}{4}You can't get that!";
+	49: "{16}{6}It has {20}{1}TITAN SECURITY{20}{0} printed on it. There is a profile shot of a man and some coded writing beside.";
+	50: "{16}{5}It is empty, apart from some official-looking documents.";
+	51: "{16}{6}Which one?";
+	52: "{16}{6}You pull at the plate.";
+	53: "{16}{6}It bends a little, but remains intact.";
+	54: "{16}{6}And suddenly, it comes free!";
+	55: "{16}{6}The glass shatters to fall to the ground in shards.";
+	56: "{16}{6}It is an unreadable computer code.";
+	57: "{16}{6}It is locked.";
+	58: "{16}{6}What with?";
+	59: "Close-set beady eyes track your every movement.";
+	60: "There is a '+' symbol on it.";
+	61: "{16}{6}It is about 5 centimetres long, and is firm, yet malleable.";
+	62: "{16}{6}You bend the end, creating a hook-like shape.";
+	63: "{16}{6}It has been shaped into a hook at the end.";
+	64: "You discreetly follow...";
+	65: "{16}{6}But you'd cut yourself!";
+	66: "{16}{4}\"{16}{5}No-one gets past without written permission of the Govenor,{16}{4}\" says the guard.";
+	67: "{16}{6}The screen lights up^^{16}{6}^{20}{1}CODE ACCEPTED.{20}{0}^^^The screen slides up into the ceiling.";
+	68: "{16}{6}The screen shows^^{16}{6}{20}{1}INCORRECT CODE.{20}{0}";
+	69: "The tape is confiscated.^^^";
+	70: "{16}{5}It is half-full.";
+	71: "The safety-belt is fastened!";
+	72: "{16}{6}It's fixed in place!";
+	73: "One particular scrap catches your eye.";
+	74: "{16}{4}An illegal drug-headband - it gives the wearer a brief addictive stimulant.";
+	75: "You feel exhilerated - Strong, even!";
+	76: "{16}{6}You can make out a lump under the carpet, about one metre square.";
+	77: "";
+	78: "{16}{6}You insert the bent wire into the keyhole.";
+	79: "{16}{5}You hear a click!^The door slides open.";
+	80: "";
+	81: "{16}{5}You can't pour it direct from the bottle!";
+	82: "{16}{6}You give the beaker a good shake.";
+	83: "{16}{6}The liquid drains away.";
+	84: "{16}{6}There is a large hole in it - you can see a trapdoor.";
+	85: "{16}{6}It is open.";
+	86: "{16}{6}It is closed.";
+	87: "{16}{6}You slice the carpet around the lump.";
+	88: "{16}{4}It has a tap on the top.";
+	89: "{16}{6}You fill the vase.";
+	90: "{16}{6}The case has the words {20}{1}USE IN CASE OF FIRE{20}{0} in large red letters on it. It contains an axe, locked away behind the glass.";
+	91: "";
+	92: "{16}{6}The documents are very verbose and largely irrelevant. A handwritten note stapled to the back page catches your attention.";
+	93: "{16}{6}The note reads:^^ {16}{5}Call Gov (71513) and re-connect line 4 to 5. Thursday, no later. Memo - KG1B2 Q8T8D BQP7U.";
+	94: "{16}{4}You accidentally drop the vase and it shatters.";
+	95: "{16}{6}The desk is bare except for a button set into the top. ";
+	96: "{16}{6}Nothing happens.";
+	97: "Assorted useless bits of hardware.";
+	98: "{16}{2}Corridor^^{16}{7}You are walking along a very long corridor which visibly inclines downwards, to the north. South, conversely, inclines upwards.^^Your only exits are north and south.";
+	99: "Tchaikovsky piano music - enchanting.";
+	100: "There is a wire plate set into the floor.";
+	101: "There is a hole in the floor.";
+	102: "{16}{4}The guard steps aside to let you through.";
+	103: "All is lost.^^^";
+	104: "Just some long-winded reports.";
+	105: "{16}{6}An LED indicator on the side reveals that it has no power";
+	106: "{16}{6}An LED indicator on the side shows the cutter to be at full power.";
+	107: "{16}{6}The disk bares the label {20}{1}BACKUP SYSTEMS INIT{20}{0}.";
+	108: "{16}{6}There is a body in the wardrobe.";
+	109: "{16}{6}You feel something lumpy in the chair.";
+	110: "{16}{6}There is a liquid in it.";
+	111: "{16}{4}\"{16}{5}Please go to your seats and fasten your seatbelts. Departure in about 3 minutes,\"{16}{4} says a voice over hidden speakers.";
+	112: "{16}{6}It has a simple QWERTY keyboard, is attached to a monitor above it, and has a disk-drive. ";
+	113: "When your fingerprints match those found in the dead man's apartment, the guard arrests you.^^";
+	114: "{16}{6}The screen above lights up.^";
+	115: "{16}{6}The screen above goes black.^";
+	116: "{16}{6}Blank.";
+	117: " Some of the metal panels are quite hot to the touch.";
+	118: "Better luck next time...^^^";
+	119: "{16}{6}The man is middle-aged, with a beard and gaunt, sunken features.";
+	120: "He is wearing a jacket.";
+	121: "{16}{4}Too heavy!";
+	122: "{16}{6}Very refreshing.";
+	123: "{16}{6}The screen blocks your path.";
+	124: "{16}{6}The table is bare.";
+	125: "You also notice a loose panel in the shaft, beneath you.";
+	126: "There is a hole in the shaft beneath you, where a panel once was.";
+	127: "As the last screw is removed, the panel falls away to land with a loud clattering sound.";
+	128: "{16}{6}Nothing catches your eye.";
+	129: "{16}{6}One of the panels has a missing screw.";
+	130: "Very complex. Eight wires protrude from the machinery, sparking slightly. Below the wires is a small slot.";
+	131: "The airlock door slides upwards.";
+	132: "{20}{1}Press a key{20}{0}";
+	133: "slot.";
+	134: "s";
+	135: ". ";
+	136: "{16}{6}The container bears the label^{16}{7}{17}{2}Emergency System Retrieval{17}{0}{16}{6}.";
+	137: "{16}{6}You slice the container from top to bottom with the las-cutter, but it holds together.";
+	138: "{16}{5}You kick it, and it splits open, spilling it's contents.";
+	139: "{16}{6}You have found something!";
+	140: "^^There a man here with his back to you. He does not notice you.";
+	141: "The airlock door slides back into place.";
+	142: "^{16}{2}You hear faint footsteps from above.";
+	143: "It is too complex for you to comprehend.";
+	144: "{16}{6}It seems quite new.";
+	145: "{16}{6}It's behind the glass.";
+	146: "The woman does not recognise you, and so she and the guard leave.";
+	147: "{4}{16}{4}There is a photo and a name: Mike Gerrard - computer journalist.";
+	148: "{16}{6}The guard blocks your way.";
+	149: "{16}{6}You examine the guard, searching his pockets.";
+	150: "{16}{6}Suddenly his eyes flick open! He gets to his feet and shouts something. Two more guards, armed, rush in from the north door.";
+	151: "{16}{6}You move towards the man and quickly inject him in the back of the neck with the syringe.";
+	152: "^{16}{4}A stewardess asks you ";
+	153: "to get into your seat.";
+	154: "to fasten your safety belt.";
+	155: "A guard enters with the woman and child, from earlier on.^^";
+	156: "{16}{2}On The Surface^^{16}{7}You are traversing the cratered, jagged surface of the Moon. The ground underfoot is dusty and billows up at the slightest movement.^^You can go in almost any direction.";
+	157: "{16}{6}Unable to present any ID he suspects you of being a trespasser and calls for three more guards.";
+	158: " A huge wire mesh screen bisects the room, completely blocking off the east exit.";
+	159: "{16}{4}You lift the receiver, type in the number and wait. A few seconds later a voice says: \"{16}{5}Who is it?{16}{4}\".";
+	160: "{16}{4}\"{16}{5}Don't know anyone of that name,{16}{4}\" he replies and promptly hangs up.";
+	161: "{16}{4}\"{16}{5}Ah, yes. About that new uniform of yours - I'll have it left at reception for you. Ok? Gotta go,{16}{4}\" and with that he hangs up.";
+	162: "{16}{4}\"{5}{16}{5}Leave me alone!!{16}{4}\". He hangs up.";
+	163: "{16}{5}No such number.";
+	164: "{16}{6}^He stiffens in pain and then drops to his knees, screaming as the liquid from the syringe takes effect.";
+	165: "{16}{4}Three guards rush in carrying buckets of water. They see you and arrest you.";
+	166: "{16}{5}You set fire to the files, and they burn fast. Smoke reaches the ceiling as your hear an alarm start up.";
+	167: "{16}{5}A sprinkler system, however, soon puts the fire out.";
+	168: "{16}{4}You hear voices and footsteps coming closer...";
+	169: "{16}{4}You hide under the desk.";
+	170: "{16}{4}The Govenor and another person enter the office. ";
+	171: "^{16}{4}They stop in mid-conversation as they see you. The guard rushes over and restrains you.^";
+	172: "{16}{4}From under the desk, you can hear their conversation. Something happens out of view then they leave and you emerge from beneath the desk... ";
+	173: "{16}{4}A guard is with them, giving them directions.";
+	174: "{16}{5}Sparks fly and the monitors go blank as you destroy the panels.";
+	175: "{16}{6}You can see various fly-on-the-wall views of the complex, inside and out.";
+	176: "{16}{5}There are a few TV screens and a whole host of meaningless buttons.";
+	177: "{16}{5}Smashed beyond repair.";
+	178: "{16}{5}Bare, save for the control panels.";
+	179: "{16}{6}Apparently quite comfortable.";
+	180: "{16}{4}The wire obviously doesn't fit this lock.";
+	181: "{16}{5}It is slightly too big for the keyhole.";
+	182: "{16}{4}You hear something drop on the other side of the door.";
+	183: "{16}{4}Filled with cool, clear water.";
+	184: "{16}{6}You hear the sound of the door being locked.";
+	185: "{16}{5}You can see something in the keyhole.";
+	186: " lead elsewhere.";
+	187: "You hand the passport over, the guard nods and you are allowed through...";
+	188: "The guard asks to see your passport.";
+	189: "Without the tape, however, your quest has failed.";
+	190: "^The effect of the stimulant has worn off.";
+	191: "It is 'Meditations' by Marcus Aurelius..^^\"Everything is banal in experience, fleeting in duration, sordid in content.\"";
+	192: "The shuttle will soon reach earth, and so your adventure has ended...";
+	193: "un";
+	194: "successfully.";
+	195: "^Without the tape, you have no proof of the Govenor's corrupt dealings, and so you have failed.";
+	196: "^With the tape in your possession, you know that when you reach Earth, the Govenor's reputation will be destroyed...";
+	197: "";
+	198: "BT can assist you...";
+	199: "Some shutters block off the room beyond.";
+	200: "You can see a room in total darkness beyond.";
+	201: "Strong slats of aluminium.";
+	202: "You hear a click.";
+	203: "The shutters slacken.";
+	204: "The shutters!";
+	205: "You can see ";
+	206: "{16}{5}There are some flowers in it.";
+	207: "The fragile vase shatters on contact with the ground.";
+	208: "{16}{6}Very pretty!";
+	209: "It is ringing - why not answer it?";
+	210: "There is a wheel on the grill, which can be turned to open it.";
+	211: "In the centre is a small cubic hole.";
+	212: "A chuck occupies a hole in the centre.";
+	213: "A bent rod of metal, shaped into a square at the end.";
+	214: "The wires are individually numberd from 1 to 8 and appear to have been cut.";
+	215: "The las-cutter is in the slot.";
+	216: "You hear a buzzing sound.";
+	217: "An almighty explosion tears the  machinery apart (as well as doing much the same to you...)";
+	218: "^Three guards rush in! The leader points at you and you are restrained.^";
+	219: "";
+}
+
+SYSMESSAGES
+{
+	0: "^{20}{1}           GAME OVER^{20}{0}^";
+	1: "Also here is ";
+	2: "^";
+	3: "^";
+	4: "^";
+	5: "^";
+	6: "{16}{6}Pardon?^";
+	7: "{16}{6}You can't go that way.^";
+	8: "{16}{6}Maybe later.^";
+	9: "{5}{16}{6}You are carrying {16}{7}";
+	10: "^{16}{6}You are wearing civilian clothes, but apart from those, you are wearing ";
+	11: "{16}{6}nothing.^";
+	12: "";
+	13: "^^{16}{4}Another attempt?";
+	14: "^{145}{145}{145}{145}{145}{145}{145} P.Gleghorn 1992 {145}{145}{145}{145}{145}{145}{145}{145}^";
+	15: "{16}{6}Okay.^";
+	16: "{16}{2}{161}ANYKEY{161}{161}{161}{161}{161}{161}{161}{161}{161}{161}{161}{161}{161}{161}{161}{161}{161}{161}{161}{161}{161}{161}{161}{161}{160}^";
+	17: "";
+	18: "";
+	19: "^{16}{5}Your unprotected exposure to the cold vacuum of space brings about your somewhat predictable demise...^";
+	20: "{16}{5}It is a heavy, reinforced steel security barrier.^";
+	21: "";
+	22: "";
+	23: "{16}{6}You're not wearing one of those.^";
+	24: "{16}{6}You can't. You're wearing the _.^";
+	25: "{16}{6}You've already got the _.^";
+	26: "{16}{6}There isn't one of those here.^";
+	27: "{16}{6}You're carrying all you can.^";
+	28: "{16}{6}You don't have one of those.^";
+	29: "{16}{6}You're already wearing the _.^";
+	30: "Y";
+	31: "N";
+	32: "{16}{2}{6}         More...{16}{7}";
+	33: "";
+	34: "{0}{16}{5}{143}";
+	35: "There is a red light flashing on top.^^";
+	36: "{16}{6}You take the _.^";
+	37: "{16}{6}You're now wearing the _.^";
+	38: "{16}{6}You've removed the _.^";
+	39: "{16}{6}You drop the _.^";
+	40: "{16}{6}You can't wear the _.^";
+	41: "{16}{6}You can't remove the _.^";
+	42: "{16}{6}You can't remove the _ until you drop something else.^";
+	43: "{16}{6}The _ is too heavy.^";
+	44: "{16}{6}The _ is now in the ";
+	45: "{16}{6}The _ isn't in the ";
+	46: ", ";
+	47: " and ";
+	48: "{16}{6}.^";
+	49: "{16}{6}You don't have the _.^";
+	50: "{16}{6}You're not wearing the _.^";
+	51: "{16}{6}.^";
+	52: "{16}{6}There isn't one of those in the ";
+	53: "{16}{6}nothing of importance.^";
+	54: "{16}{6}You see nothing interesting.^";
+	55: "{16}{4}Are you sure?";
+	56: "{16}{5}Red leather-top, it stands fairly high off the floor. It has two drawers.^";
+	57: "{16}{4}Really sure?";
+	58: "Stereotypes of typical tourists.";
+	59: "{16}{4}Last chance...?";
+	60: "^";
+	61: "{16}{6}It is on.^";
+	62: "{16}{6}Nothing seems to have happened, until he lurches over and falls to the floor.^";
+	63: "{16}{5}You slide it under the door.^";
+	64: "{16}{6}There's no such ALL command.^";
+	65: "{16}{4}Both closed.^";
+	66: "{16}{4}Only the leftmost one opens.^";
+	67: "{16}{5}One standard unit of currency.^";
+	68: "The liquid is dark blue.^";
+	69: "The liquid in it is colourless.^";
+	70: "";
+	71: "^To the south is the departure lounge.^";
+	72: "She points at you.^^\"That's the man! He's the murderer!\"^^";
+	73: "{16}{6}It is off.^";
+	74: "{16}{5}It also bears the name \"F. Wilkes\".^";
+	75: "{16}{6}The bed has seen quite a bit of activity, judging by the state of the sheets.^";
+	76: "{16}{6}The man's screams have attracted some guards. ";
+	77: "The guard orders everyone out of the shuttle.^^Fingerprints are taken of everybody.^^";
+	78: "{16}{6}He whirls around and shouts at you angrily:^";
+	79: "{16}{5}The airlock has been security-locked against opening somehow.^";
+	80: "{16}{3}Stained...^";
+	81: "{16}{5}A fairly large, metal suitcase, with a numerical combination lock.^";
+	82: "{16}{5}You can see the corner of a handkerchief poking from the join in the case.^";
+	83: "{16}{4}You accidentally push the handkerchief into the case.^";
+	84: "{16}{6}The number 02927 has been scribbled, on it.^";
+	85: "{16}{6}The row of suits: ";
+	86: "{16}{5}It requires some form of currency to operate.^";
+	87: "{16}{6}_: ";
+	88: "A 180{144} view of the complex and the Moon surface makes this place a recreational joy to occupy.";
+	89: "^^There is a ringing telephone here.";
+	90: "^ and north-west";
+	91: "The suitcase springs open.^";
+	92: " {16}{6}The injection knocked him unconscious - but he is perfectly all right.^";
+	93: "{16}{5}It shows how the bearer has the Govenor's permission to enter high-security areas.^";
+	94: "The man sees you!^";
+	95: "{16}{4}Too heavy!^";
+	96: "^{16}{5}Turns taken: ";
+	97: "{16}{4}A neat one-size-fits-all uniform bearing the name {20}{1}F. WILKES{20}{0}.^";
+	98: "{16}{4}A 9V battery.^";
+	99: "{16}{5}Thin mesh, yet very strong.^";
+	100: "{16}{5}A freak accident has occured...^";
+	101: "{16}{5}The ceiling has collapsed on top of you...^^";
+	102: "There is a guard here.";
+	103: "{16}{2}Ventilation Shaft^^{16}{7}The shaft leads off in all directions. A warm current of air wafts up over you from distant machinery.^^You may go north, south, east or west.";
+	104: "{16}{5}It sparkles and fizzes as the water disrupts it's workings.^";
+	105: "{16}{6}The guard ignores you...";
+	106: "{16}{4}It is wet and seems to be malfunctioning.^";
+	107: "{16}{5}You can see a small catch.^";
+	108: "{16}{6}There is a click and a secret compartment opens.^";
+	109: ", north-east, south-west and south-east";
+	110: "^^{16}{5}Score (80 max):";
+	111: "It is coming from beneath the floor.^";
+	112: "^As the stewardesses usher the last people into their seats, and the entrance slides shut, the shuttle starts to move...";
+	113: "The _ will not burn.^";
+	114: "The wheel refuses to turn.^";
+	115: "^^High up in the west wall, a security camera looks down at you.";
+	116: "{16}{4}You are totally ignored!^";
+}
+
+GRAPHICS
+{
+	75,
+	5,4,5,5,1,1,1,1,1,1,
+	1,1,1,1,1,1,1,1,1,1,
+	1,1,1,1,1,1,1,1,1,1,
+	1,1,1,1,1,1,1,1,1,1,
+	1,1,1,1,1,1,1,1,1,1,
+	1,1,1,1,1,1,1,1,1,1,
+	1,1,1,1,1,1,1,1,1,1,
+	1,1,1,1,1,
+	15,135,15,15,15,15,15,15,15,15,
+	15,15,15,15,15,15,15,15,15,15,
+	15,15,15,7,7,15,15,15,7,7,
+	7,7,7,7,7,7,7,7,7,7,
+	7,7,7,7,7,7,7,7,7,7,
+	7,7,7,7,7,7,7,7,7,7,
+	7,7,7,7,7,7,7,7,7,7,
+	7,7,7,7,7,
+	34,0,0,51,7,2,0,175,7,34,
+	0,175,136,7,34,0,175,135,7,7,
+	7,7,7,7,7,7,7,7,7,7,
+	7,7,7,7,7,7,7,7,7,7,
+	7,7,7,7,7,7,7,7,7,7,
+	7,7,7,7,7,7,7,7,7,7,
+	7,7,7,7,7,7,7,7,7,7,
+	7,7,7,7,7,7,7,7,7,7,
+	7,7,7,7,7,7,7,7,7,7
+	
+}
+
+CHARACTERS
+{
+	24, 36, 36, 24, 0, 0, 0, 0, 
+	153, 60, 102, 195, 153, 60, 102, 195, 
+	124, 17, 130, 84, 57, 84, 130, 17, 
+	8, 18, 36, 73, 146, 36, 72, 16, 
+	174, 168, 168, 236, 168, 168, 168, 174, 
+	238, 132, 132, 164, 164, 164, 164, 238, 
+	238, 170, 170, 238, 202, 170, 170, 170, 
+	0, 0, 0, 0, 0, 0, 0, 0, 
+	0, 8, 92, 126, 124, 120, 124, 0, 
+	0, 16, 58, 126, 62, 30, 62, 0, 
+	0, 62, 30, 62, 126, 58, 16, 0, 
+	0, 24, 60, 126, 60, 60, 60, 0, 
+	0, 60, 60, 60, 126, 60, 24, 0, 
+	0, 8, 124, 126, 126, 124, 8, 0, 
+	0, 16, 62, 126, 126, 62, 16, 0, 
+	0, 124, 120, 124, 126, 92, 8, 0, 
+	192, 240, 252, 255, 255, 252, 240, 192, 
+	0, 0, 0, 255, 255, 0, 0, 0, 
+	255, 255, 255, 255, 255, 255, 255, 255, 
+	170, 85, 170, 85, 170, 85, 170, 85, 
+	204, 51, 204, 51, 204, 51, 204, 51, 
+	170, 170, 85, 85, 170, 170, 85, 85, 
+	0, 255, 0, 255, 0, 255, 0, 255, 
+	0, 0, 0, 0, 0, 0, 0, 0, 
+	16, 16, 16, 16, 16, 16, 16, 16, 
+	0, 0, 0, 255, 0, 0, 0, 0, 
+	68, 68, 68, 68, 68, 68, 68, 68, 
+	0, 255, 0, 0, 0, 255, 0, 0, 
+	128, 64, 32, 16, 8, 4, 2, 1, 
+	1, 2, 4, 8, 16, 32, 64, 128, 
+	34, 17, 136, 68, 34, 17, 136, 68, 
+	68, 136, 17, 34, 68, 136, 17, 34, 
+	195, 60, 195, 60, 195, 60, 195, 60, 
+	4, 4, 255, 64, 64, 64, 255, 4, 
+	170, 0, 170, 0, 170, 0, 170, 0, 
+	1,
+	0, 0, 0, 0, 0, 0, 0, 0, 
+	24, 24, 24, 24, 24, 0, 24, 0, 
+	54, 54, 108, 0, 0, 0, 0, 0, 
+	108, 108, 254, 108, 254, 108, 108, 0, 
+	24, 126, 88, 126, 26, 126, 24, 0, 
+	198, 206, 28, 56, 112, 230, 198, 0, 
+	112, 216, 216, 118, 220, 220, 118, 0, 
+	12, 12, 24, 48, 0, 0, 0, 0, 
+	12, 24, 24, 24, 24, 24, 12, 0, 
+	24, 12, 12, 12, 12, 12, 24, 0, 
+	0, 108, 56, 254, 56, 108, 0, 0, 
+	24, 24, 126, 126, 24, 24, 0, 0, 
+	0, 0, 0, 0, 24, 24, 48, 0, 
+	0, 0, 0, 60, 60, 0, 0, 0, 
+	0, 0, 0, 0, 0, 48, 48, 0, 
+	6, 14, 28, 56, 112, 224, 192, 0, 
+	60, 102, 110, 126, 118, 102, 60, 0, 
+	56, 24, 24, 24, 24, 24, 60, 0, 
+	124, 6, 6, 62, 96, 96, 126, 0, 
+	124, 6, 6, 60, 6, 6, 124, 0, 
+	96, 96, 108, 108, 126, 12, 12, 0, 
+	126, 96, 96, 124, 6, 6, 124, 0, 
+	62, 96, 96, 124, 102, 102, 60, 0, 
+	126, 6, 6, 12, 12, 24, 24, 0, 
+	60, 102, 102, 60, 102, 102, 60, 0, 
+	60, 102, 102, 102, 62, 6, 6, 0, 
+	0, 24, 24, 0, 0, 24, 24, 0, 
+	0, 24, 24, 0, 24, 24, 24, 48, 
+	0, 12, 24, 48, 48, 24, 12, 0, 
+	0, 0, 126, 0, 126, 0, 0, 0, 
+	0, 48, 24, 12, 12, 24, 48, 0, 
+	60, 102, 102, 12, 24, 0, 24, 0, 
+	124, 206, 222, 214, 222, 192, 124, 0, 
+	60, 102, 102, 126, 102, 102, 102, 0, 
+	124, 102, 102, 124, 102, 102, 124, 0, 
+	60, 102, 96, 96, 96, 102, 60, 0, 
+	124, 102, 102, 102, 102, 102, 124, 0, 
+	126, 96, 96, 124, 96, 96, 126, 0, 
+	126, 96, 96, 124, 96, 96, 96, 0, 
+	62, 96, 96, 110, 102, 102, 62, 0, 
+	102, 102, 102, 126, 102, 102, 102, 0, 
+	126, 24, 24, 24, 24, 24, 126, 0, 
+	6, 6, 6, 6, 6, 102, 60, 0, 
+	102, 108, 120, 120, 108, 102, 102, 0, 
+	96, 96, 96, 96, 96, 96, 126, 0, 
+	99, 119, 127, 107, 99, 99, 99, 0, 
+	102, 118, 126, 126, 110, 102, 102, 0, 
+	60, 102, 102, 102, 102, 102, 60, 0, 
+	124, 102, 102, 102, 124, 96, 96, 0, 
+	60, 102, 102, 102, 118, 108, 54, 0, 
+	124, 102, 102, 102, 124, 108, 102, 0, 
+	60, 96, 96, 60, 6, 6, 124, 0, 
+	126, 24, 24, 24, 24, 24, 24, 0, 
+	102, 102, 102, 102, 102, 102, 60, 0, 
+	102, 102, 102, 102, 102, 60, 24, 0, 
+	99, 99, 99, 107, 127, 119, 99, 0, 
+	102, 102, 60, 60, 102, 102, 102, 0, 
+	102, 102, 102, 60, 24, 24, 24, 0, 
+	126, 6, 12, 24, 48, 96, 126, 0, 
+	30, 24, 24, 24, 24, 24, 30, 0, 
+	192, 224, 112, 56, 28, 14, 6, 0, 
+	120, 24, 24, 24, 24, 24, 120, 0, 
+	16, 56, 124, 254, 56, 56, 56, 0, 
+	0, 0, 0, 0, 0, 0, 0, 255, 
+	60, 102, 96, 248, 96, 96, 254, 0, 
+	0, 0, 60, 6, 62, 102, 62, 0, 
+	96, 96, 124, 102, 102, 102, 124, 0, 
+	0, 0, 60, 102, 96, 102, 60, 0, 
+	6, 6, 62, 102, 102, 102, 62, 0, 
+	0, 0, 60, 102, 126, 96, 60, 0, 
+	14, 24, 62, 24, 24, 24, 24, 0, 
+	0, 0, 62, 102, 102, 62, 6, 124, 
+	96, 96, 108, 118, 102, 102, 102, 0, 
+	24, 0, 56, 24, 24, 24, 60, 0, 
+	6, 0, 6, 6, 6, 6, 6, 60, 
+	96, 96, 102, 108, 120, 108, 102, 0, 
+	56, 24, 24, 24, 24, 24, 60, 0, 
+	0, 0, 54, 107, 107, 99, 99, 0, 
+	0, 0, 108, 118, 102, 102, 102, 0, 
+	0, 0, 60, 102, 102, 102, 60, 0, 
+	0, 0, 124, 102, 102, 124, 96, 96, 
+	0, 0, 62, 102, 102, 62, 6, 7, 
+	0, 0, 108, 118, 96, 96, 96, 0, 
+	0, 0, 62, 96, 60, 6, 124, 0, 
+	24, 24, 126, 24, 24, 24, 14, 0, 
+	0, 0, 102, 102, 102, 110, 54, 0, 
+	0, 0, 102, 102, 102, 60, 24, 0, 
+	0, 0, 99, 99, 107, 107, 54, 0, 
+	0, 0, 102, 60, 24, 60, 102, 0, 
+	0, 0, 102, 102, 102, 62, 12, 120, 
+	0, 0, 126, 12, 24, 48, 126, 0, 
+	30, 24, 24, 112, 24, 24, 30, 0, 
+	24, 24, 24, 24, 24, 24, 24, 0, 
+	120, 24, 24, 14, 24, 24, 120, 0, 
+	54, 54, 108, 0, 0, 0, 0, 0, 
+	60, 66, 153, 161, 153, 66, 60, 0
+
+}
+
+PROCESS 3;
+PROCESS 4;
+PROCESS 5;
+PROCESS 6;
+PROCESS 7;
+PROCESS 8;
+PROCESS 9;
+PROCESS 10;
+PROCESS 11;
+PROCESS 12;
+PROCESS 13;
+PROCESS 14;
+PROCESS 15;
+PROCESS 16;
+PROCESS 17;
+PROCESS 18;
+
+RESPONSE
+{
+	* *: ATGT 71 ATLT 74 LT 34 14 NOTZERO 142 MESSAGE 71 DONE;
+	* *: AT 13 PROCESS 10 DONE;
+	* *: AT 14 LT 34 10 NOTEQ 33 84 MESSAGE 33 DONE;
+	* *: AT 26 LT 34 14 NOTEQ 33 84 MESSAGE 33 DONE;
+	* *: AT 17 LT 34 10 NOTEQ 33 84 MESSAGE 33 DONE;
+	* *: AT 57 LT 34 10 NOTEQ 33 84 MESSAGE 33 DONE;
+	* *: LT 34 10 NOTEQ 33 84 ATGT 7 ATLT 11 MESSAGE 33 DONE;
+	* *: EQ 33 84 PROCESS 12 DONE;
+	S _: AT 7 EQ 99 7 MESSAGE 0 MESSAGE 157 PROCESS 9;
+	S _: AT 30 EQ 80 0 GOTO 16 DESC DONE;
+	S _: AT 30 EQ 80 255 GOTO 19 DESC DONE;
+	S _: AT 6 MESSAGE 57 MESSAGE 46 DONE;
+	S _: AT 7 NOTEQ 99 7 GOTO 23 ZERO 106 LET 8 5 DESC DONE;
+	S _: AT 47 MESSAGE 57 DONE;
+	S _: AT 2 NOTZERO 60 GOTO 8 DESC DONE;
+	S _: AT 21 MESSAGE 57 DONE;
+	S _: AT 44 NOTZERO 107 GOTO 22 DESC DONE;
+	S _: AT 24 NOTZERO 65 GOTO 2 DESC DONE;
+	S _: AT 24 ZERO 65 MESSAGE 57 DONE;
+	S _: AT 7 GOTO 23 DESC DONE;
+	S _: AT 71 CARRIED 10 MESSAGE 187 ANYKEY GOTO 72 DESC DONE;
+	S _: AT 71 NOTCARR 10 MESSAGE 188 DONE;
+	E _: AT 3 ZERO 115 MESSAGE 4 PROCESS 9;
+	E _: AT 11 MESSAGE 150 PROCESS 9;
+	E _: AT 12 EQ 70 255 GOTO 60 LET 116 5 DESC DONE;
+	E _: AT 12 ZERO 70 MESSAGE 123 DONE;
+	E _: AT 2 EQ 65 255 SYSMESS 7 MESSAGE 22 DONE;
+	E _: AT 44 NOTZERO 107 SYSMESS 7 MESSAGE 22 DONE;
+	E _: ATGT 57 ATLT 60 MESSAGE 57 DONE;
+	E _: ATGT 64 ATLT 71 MESSAGE 57 DONE;
+	E _: AT 73 MESSAGE 2 DONE;
+	E _: AT 72 ZERO 142 CLEAR 141 GOTO 73 DESC DONE;
+	W _: AT 7 EQ 99 7 MESSAGE 0 MESSAGE 157 PROCESS 9;
+	W _: AT 7 NOTEQ 99 7 MESSAGE 57 DONE;
+	W _: AT 13 MESSAGE 57 DONE;
+	W _: AT 2 EQ 65 255 SYSMESS 7 MESSAGE 22 DONE;
+	W _: AT 5 EQ 101 255 GOTO 21 DESC DONE;
+	W _: AT 5 EQ 101 0 MESSAGE 57 DONE;
+	W _: AT 55 MESSAGE 85 DONE;
+	W _: AT 58 MESSAGE 57 DONE;
+	W _: AT 59 ZERO 118 MESSAGE 57 DONE;
+	W _: AT 59 NOTZERO 118 GOTO 61 DESC DONE;
+	W _: AT 44 NOTZERO 107 SYSMESS 7 MESSAGE 22 DONE;
+	W _: ATGT 64 ATLT 71 MESSAGE 57 DONE;
+	W _: AT 72 MESSAGE 2 DONE;
+	W _: AT 73 ZERO 142 CLEAR 141 GOTO 72 DESC DONE;
+	N _: AT 11 MESSAGE 57 DONE;
+	N _: AT 2 EQ 65 255 GOTO 24 LET 70 7 DESC DONE;
+	N _: AT 47 NOTCARR 33 MESSAGE 66 DONE;
+	N _: AT 47 CARRIED 33 ZERO 113 MESSAGE 1 DONE;
+	N _: AT 45 EQ 103 0 GOTO 46 DESC DONE;
+	N _: AT 23 NOTZERO 109 MESSAGE 57 DONE;
+	N _: AT 23 ZERO 109 GOTO 7 PLUS 30 2 DESC DONE;
+	N _: AT 22 ZERO 107 MESSAGE 57 DONE;
+	N _: AT 22 NOTZERO 107 GOTO 44 DESC DONE;
+	N _: AT 54 ISAT 24 252 LET 7 4 GOTO 55 DESC DONE;
+	N _: AT 54 ISNOTAT 24 252 GOTO 55 DESC ANYKEY CLS SYSMESS 100 ANYKEY SYSMESS 101 END;
+	N _: AT 47 CARRIED 33 NOTZERO 113 MESSAGE 102 ANYKEY GOTO 48 DESC DONE;
+	N _: AT 60 NOTWORN 27 MESSAGE 3 DONE;
+	N _: AT 60 WORN 27 GOTO 70 DESC DONE;
+	N _: AT 64 NOTZERO 120 GOTO 63 DESC DONE;
+	N _: AT 64 ZERO 120 MESSAGE 57 DONE;
+	N _: AT 51 NOTWORN 27 MESSAGE 0 MESSAGE 157 PROCESS 9;
+	N _: AT 51 WORN 27 SYSMESS 105 ANYKEY GOTO 52 DESC DONE;
+	D _: AT 10 ISNOTAT 11 252 GOTO 11 DESC DONE;
+	D _: AT 18 PRESENT 15 GOTO 15 DESC DONE;
+	D _: AT 14 EQ 91 255 GOTO 17 DESC DONE;
+	D _: AT 71 CARRIED 10 MESSAGE 187 ANYKEY GOTO 72 DESC DONE;
+	D _: AT 71 NOTCARR 10 MESSAGE 188 DONE;
+	I _: SYSMESS 9 INK 6 LISTAT 254 SYSMESS 10 LISTAT 253 INK 7;
+	GET ALL: DOALL 255;
+	GET SUITS: AT 2 SYSMESS 85 MESSAGE 18 DONE;
+	GET DISK: NOUN2 DRIVE MESSAGE 115 CREATE 23 AUTOG DONE;
+	GET AXE: AT 27 ABSENT 21 MESSAGE 145 DONE;
+	GET SUIT: AT 2 ISNOTAT 7 2 ISNOTAT 24 2 SYSMESS 85 MESSAGE 18 DONE;
+	GET SUIT: PRESENT 7 PRESENT 24 NOTEQ 35 138 NOTEQ 35 134 MESSAGE 51 DONE;
+	GET SUIT: AT 2 PRESENT 7 ABSENT 24 AUTOG DONE;
+	GET JUNK: PRESENT 13 MESSAGE 48 DONE;
+	GET PASS: AT 7 EQ 68 255 CREATE 10 CLEAR 68 AUTOG DONE;
+	GET FLOWE: PRESENT 56 ISAT 57 252 CREATE 57 SWAP 1 56 AUTOG DONE;
+	GET CUTTE: AT 17 ISAT 20 0 CLEAR 198 CREATE 20 AUTOG DONE;
+	GET PLATE: AT 10 ZERO 67 MESSAGE 72 DONE;
+	GET PLATE: AT 10 ISAT 11 252 MESSAGE 9 DONE;
+	GET WIRE: AT 14 ISAT 12 252 CREATE 12 AUTOG CLEAR 76 DONE;
+	GET PANEL: AT 14 EQ 91 0 MESSAGE 9 DONE;
+	GET BRICK: AT 55 CREATE 55 AUTOG DONE;
+	GET CARPE: AT 18 MESSAGE 9 DONE;
+	GET TRAP: AT 16 SYSMESS 8 DONE;
+	GET CONTA: AT 28 PRESENT 22 MESSAGE 48 DONE;
+	GET CASE: PRESENT 18 PRESENT 21 MESSAGE 51 DONE;
+	GET CASE: PRESENT 19 PRESENT 21 MESSAGE 51 DONE;
+	GET CASE: PRESENT 18 WHATO SYSMESS 87 MESSAGE 72 DONE;
+	GET CASE: PRESENT 19 WHATO SYSMESS 87 MESSAGE 72 DONE;
+	GET PHONE: AT 1 EXTERN 14 DONE;
+	GET PHONE: AT 30 MESSAGE 9 DONE;
+	GET LOCKE: AT 2 WHATO SYSMESS 87 MESSAGE 72 DONE;
+	GET SHEET: AT 23 EQ 111 255 AUTOG ISAT 37 252 CREATE 37 ANYKEY MESSAGE 139 DONE;
+	GET SHEET: AT 23 NOTZERO 109 EQ 111 128 AUTOG DONE;
+	GET SHEET: PRESENT 52 ZERO 132 LET 132 128 SYSMESS 83 DONE;
+	GET DISPE: PRESENT 39 MESSAGE 9 DONE;
+	GET CIRCU: AT 57 MESSAGE 9 DONE;
+	GET BODY: NOUN2 WARDR NOTZERO 131 NOTZERO 130 CREATE 50 SYSMESS 15 AUTOG DONE;
+	GET JACKE: NOUN2 BODY PRESENT 50 ISAT 51 252 CREATE 51 PLUS 30 2 OK;
+	GET HANDK: PRESENT 52 ABSENT 53 ZERO 132 ADVERB CAREF CREATE 53 SYSMESS 15 LET 132 128 PLUS 30 2 AUTOG DONE;
+	GET HANDK: PRESENT 52 ZERO 132 LET 132 128 SYSMESS 83 DONE;
+	GET COMPA: AT 23 NOTZERO 136 MESSAGE 48 DONE;
+	GET _: AUTOG DONE;
+	PUT ALL: DOALL 254;
+	PUT SHEET: AT 23 NOTZERO 109 NOUN2 DOOR CARRIED 33 LET 111 128 SYSMESS 63 PLACE 33 23 DONE;
+	PUT VASE: CARRIED 1 DESTROY 1 CREATE 46 MESSAGE 207 CLEAR 115 DONE;
+	PUT VASE: CARRIED 38 DESTROY 38 CREATE 46 MESSAGE 207 CLEAR 115 DONE;
+	PUT VASE: CARRIED 56 DESTROY 56 CREATE 46 CREATE 57 MESSAGE 207 CLEAR 115 DONE;
+	PUT BODY: NOUN2 WARDR AT 62 NOTZERO 130 SET 131 DESTROY 50 OK;
+	PUT _: AUTOD DONE;
+	REMOV ALL: DOALL 253;
+	REMOV JACKE: NOUN2 BODY PRESENT 50 ISAT 51 252 CREATE 51 OK;
+	REMOV _: AUTOR DONE;
+	WEAR ALL: DOALL 254;
+	WEAR _: PROCESS 3;
+	R _: DESC;
+	Q _: SYSMESS 60 SYSMESS 55 QUIT SYSMESS 57 QUIT SYSMESS 59 QUIT PROCESS 14;
+	SAVE _: SAVE;
+	LOAD _: LOAD;
+	RAMSA _: RAMSAVE DESC DONE;
+	RAMLO _: RAMLOAD 255 DESC DONE;
+	X ALL: SYSMESS 64 DONE;
+	X NOTE: PRESENT 17 MESSAGE 93 DONE;
+	X FLASH: PRESENT 0 MESSAGE 11 DONE;
+	X FLASH: PRESENT 2 MESSAGE 17 DONE;
+	X SUITS: AT 2 EQ 60 0 MES 5 MESSAGE 16 DONE;
+	X SUITS: AT 2 EQ 60 255 MES 5 MESSAGE 15 DONE;
+	X GRILL: AT 2 ZERO 60 MESSAGE 210 DONE;
+	X BANK: AT 17 MESSAGE 130 DONE;
+	X DOCUM: PRESENT 17 MESSAGE 92 DONE;
+	X DESK: AT 23 PREP UNDER SYSMESS 107 DONE;
+	X DESK: AT 4 EQ 139 255 CREATE 27 MESSAGE 139 PLUS 30 2 DONE;
+	X DESK: AT 4 MES 95 ZERO 222 MESSAGE 199 DONE;
+	X DESK: PREP UNDER AT 21 ZERO 81 SET 81 MESSAGE 139 CREATE 25 PLUS 30 2 DONE;
+	X DESK: AT 21 MESSAGE 178 DONE;
+	X DESK: AT 4 NOTZERO 222 MESSAGE 200 DONE;
+	X DESK: AT 23 NOTZERO 106 ISAT 33 252 SYSMESS 56 MESSAGE 139 CREATE 33 PLUS 30 2 DONE;
+	X DESK: AT 23 ZERO 106 SYSMESS 56 DONE;
+	X SHUTT: AT 4 MESSAGE 201 DONE;
+	X DISK: PRESENT 23 MESSAGE 107 DONE;
+	X WHEEL: AT 2 ZERO 199 ISNOTAT 58 0 MESSAGE 211 DONE;
+	X WHEEL: AT 2 NOTZERO 199 ISAT 58 0 MESSAGE 212 DONE;
+	X CABIN: AT 19 ZERO 86 MESSAGE 57 DONE;
+	X CABIN: AT 19 EQ 86 255 ISAT 3 252 CREATE 3 MESSAGE 139 DONE;
+	X FILES: PRESENT 3 MESSAGE 104 DONE;
+	X SUIT: PRESENT 7 PRESENT 24 MESSAGE 51 DONE;
+	X SUIT: PRESENT 7 ADJECT1 GRAY MESSAGE 29 DONE;
+	X SUIT: PRESENT 24 ADJECT1 WHITE MESSAGE 144 DONE;
+	X SUIT: PRESENT 7 ABSENT 24 MESSAGE 29 DONE;
+	X SUIT: PRESENT 24 ABSENT 7 MESSAGE 144 DONE;
+	X POCKE: PRESENT 7 ISAT 4 252 CREATE 4 MESSAGE 139 DONE;
+	X KEY: PRESENT 8 MESSAGE 60 DONE;
+	X JUNK: PRESENT 13 ISAT 23 252 CREATE 23 MESSAGE 139 PLUS 30 2 DONE;
+	X JUNK: AT 28 MESSAGE 97 DONE;
+	X CHAIR: AT 21 MESSAGE 179 DONE;
+	X CHAIR: AT 19 MESSAGE 179 DONE;
+	X CHAIR: AT 6 MESSAGE 179 DONE;
+	X CHAIR: AT 23 PREP UNDER ISAT 36 252 CREATE 36 MESSAGE 139 PLUS 30 2 DONE;
+	X CHAIR: AT 23 MESSAGE 179 DONE;
+	X CHAIR: AT 27 MESSAGE 179 DONE;
+	X MONIT: AT 19 EQ 87 255 INPUT 1 CLS PICTURE 2 CLS PICTURE 3 CLS GOTO 13 DESC DONE;
+	X MONIT: AT 19 EQ 87 0 MESSAGE 116 DONE;
+	X MONIT: AT 21 NOTZERO 108 MESSAGE 116 DONE;
+	X MONIT: AT 21 ZERO 108 MESSAGE 175 DONE;
+	X MONIT: AT 12 ZERO 70 SYSMESS 20 DONE;
+	X MAN: AT 7 MESSAGE 36 EQ 99 7 MESSAGE 173 DONE;
+	X MAN: AT 7 NOTEQ 99 7 DONE;
+	X MAN: AT 60 NOTZERO 116 SYSMESS 58 DONE;
+	X MAN: AT 61 ZERO 121 MESSAGE 119 DONE;
+	X CHUCK: PRESENT 58 MESSAGE 213 DONE;
+	X WIRES: AT 17 MESSAGE 214 DONE;
+	X CAMER: ATGT 62 ATGT 65 SYSMESS 35 DONE;
+	X PASS: PRESENT 10 MESSAGE 42 DONE;
+	X FLOWE: PRESENT 56 MESSAGE 208 DONE;
+	X FLOWE: PRESENT 57 MESSAGE 208 DONE;
+	X DOOR: AT 7 MESSAGE 50 DONE;
+	X DOOR: AT 14 MES 77 EQ 76 255 MES 80 DONE;
+	X DOOR: AT 14 EQ 76 0 DONE;
+	X DOOR: AT 13 MESSAGE 90 DONE;
+	X DOOR: AT 5 EQ 101 0 MESSAGE 38 MESSAGE 57 DONE;
+	X DOOR: AT 23 MESSAGE 38 DONE;
+	X DOOR: AT 64 ZERO 120 MESSAGE 57 DONE;
+	X DOOR: AT 64 NOTZERO 120 MESSAGE 85 DONE;
+	X CUTTE: PRESENT 20 ZERO 88 MESSAGE 105 DONE;
+	X CUTTE: PRESENT 20 NOTZERO 88 MESSAGE 106 DONE;
+	X WRITI: PRESENT 9 MESSAGE 56 DONE;
+	X BOX: AT 11 ISAT 12 252 CREATE 12 MESSAGE 139 PLUS 30 2 DONE;
+	X WIRE: ZERO 69 PRESENT 12 MESSAGE 61 DONE;
+	X WIRE: EQ 69 255 PRESENT 12 MESSAGE 61 MESSAGE 63 DONE;
+	X TERMI: AT 12 EXTERN 4 DONE;
+	X TERMI: AT 19 MESSAGE 112 DONE;
+	X SHELV: AT 11 ISAT 20 252 CREATE 20 MESSAGE 139 PLUS 30 2 DONE;
+	X SHELV: AT 63 ISAT 43 252 CREATE 43 MESSAGE 139 DONE;
+	X SHELV: AT 63 ISNOTAT 43 252 CREATE 44 MESSAGE 139 DONE;
+	X PANEL: AT 14 ZERO 91 MESSAGE 129 DONE;
+	X PANEL: AT 21 NOTZERO 108 MESSAGE 177 DONE;
+	X PANEL: AT 21 ZERO 108 MESSAGE 176 DONE;
+	X LADDE: AT 15 ISAT 28 252 CREATE 28 MESSAGE 139 DONE;
+	X SLOT: AT 17 ISAT 20 0 MESSAGE 215 DONE;
+	X KEYHO: AT 23 NOTZERO 109 ISAT 37 252 MESSAGE 185 DONE;
+	X CARPE: AT 18 ABSENT 15 ABSENT 16 MESSAGE 76 DONE;
+	X CARPE: AT 18 PRESENT 15 MES 84 MESSAGE 85 DONE;
+	X CARPE: AT 18 PRESENT 16 MES 84 MESSAGE 86 DONE;
+	X TABLE: AT 16 ISAT 17 252 CREATE 17 MESSAGE 106 DONE;
+	X TABLE: AT 21 PREP UNDER ISAT 20 252 MESSAGE 112 DONE;
+	X TABLE: AT 21 MESSAGE 124 DONE;
+	X TABLE: AT 6 ISAT 14 252 CREATE 14 MESSAGE 139 PLUS 30 2 DONE;
+	X TABLE: AT 27 MESSAGE 124 DONE;
+	X TRAP: AT 16 PRESENT 15 MESSAGE 85 DONE;
+	X TRAP: AT 16 PRESENT 16 MESSAGE 86 DONE;
+	X FLOOR: AT 18 ABSENT 15 ABSENT 16 MESSAGE 76 DONE;
+	X FLOOR: AT 18 PRESENT 15 MES 64 MESSAGE 85 DONE;
+	X FLOOR: AT 18 PRESENT 16 MES 84 MESSAGE 86 DONE;
+	X CONTA: PRESENT 22 MESSAGE 136 DONE;
+	X CASE: PRESENT 25 PRESENT 18 MESSAGE 51 DONE;
+	X CASE: PRESENT 18 MESSAGE 90 DONE;
+	X CASE: PRESENT 25 ISAT 17 252 CREATE 17 MESSAGE 50 PLUS 30 2 DONE;
+	X CASE: PRESENT 25 SYSMESS 74 DONE;
+	X CASE: PRESENT 52 ZERO 132 SYSMESS 82 DONE;
+	X CASE: PRESENT 52 ZERO 133 SYSMESS 81 DONE;
+	X CASE: PRESENT 52 NOTZERO 133 ISAT 10 252 MESSAGE 139 CREATE 10 ISAT 53 252 CREATE 53 LET 132 128 DONE;
+	X CASE: PRESENT 52 SYSMESS 81 DONE;
+	X GUARD: AT 11 MESSAGE 149 ADVERB CAREF ISAT 26 252 ZERO 86 CREATE 26 MESSAGE 139 PLUS 30 2 DONE;
+	X GUARD: AT 11 NOTEQ 36 144 MESSAGE 150 PROCESS 9;
+	X GUARD: AT 47 MESSAGE 59 DONE;
+	X MARK: PRESENT 7 MESSAGE 19 DONE;
+	X AIRLO: AT 2 ZERO 65 MESSAGE 86 DONE;
+	X AIRLO: AT 2 NOTZERO 65 MESSAGE 85 DONE;
+	X AIRLO: AT 44 ZERO 107 MESSAGE 86 DONE;
+	X AIRLO: AT 44 NOTZERO 107 MESSAGE 85 DONE;
+	X PHONE: AT 30 MESSAGE 30 SYSMESS 86 DONE;
+	X PHONE: AT 1 MESSAGE 209 DONE;
+	X UNIFO: PRESENT 27 SYSMESS 97 DONE;
+	X LOCKE: PRESENT 32 MESSAGE 44 DONE;
+	X LOCKE: PRESENT 31 MESSAGE 85 ISAT 7 252 CREATE 7 MESSAGE 139 DONE;
+	X LOCKE: PRESENT 31 DONE;
+	X SHEET: PRESENT 33 SYSMESS 93 DONE;
+	X SHEET: AT 30 CLS EXTERN 6 ANYKEY DESC DONE;
+	X SHEET: AT 62 SYSMESS 80 DONE;
+	X SHEET: PRESENT 53 SYSMESS 84 DONE;
+	X EQUIP: AT 48 ISAT 34 252 CREATE 34 MESSAGE 139 PLUS 30 2 DONE;
+	X CREDI: PRESENT 35 SYSMESS 67 DONE;
+	X BUTT: AT 21 ISAT 35 252 CREATE 35 MESSAGE 139 PLUS 30 2 DONE;
+	X DRAWE: AT 23 ZERO 112 SYSMESS 65 DONE;
+	X DRAWE: AT 23 NOTZERO 112 MESSAGE 139 CREATE 54 DONE;
+	X VASE: PRESENT 38 MESSAGE 183 DONE;
+	X VASE: PRESENT 56 MESSAGE 206 DONE;
+	X VASE: PRESENT 1 MESSAGE 37 DONE;
+	X NOTIC: AT 30 MESSAGE 73 DONE;
+	X SCRAP: AT 30 CLS EXTERN 6 ANYKEY DESC DONE;
+	X DISPE: PRESENT 39 MESSAGE 88 DONE;
+	X TAP: PRESENT 39 ZERO 114 SYSMESS 73 DONE;
+	X TAP: PRESENT 39 NOTZERO 114 SYSMESS 61 DONE;
+	X CIRCU: AT 57 ZERO 115 MESSAGE 143 DONE;
+	X CIRCU: AT 57 NOTZERO 115 SYSMESS 106 DONE;
+	X SYRIN: PRESENT 41 ZERO 127 MESSAGE 37 DONE;
+	X SYRIN: PRESENT 41 NOTZERO 127 MESSAGE 110 DONE;
+	X RACK: AT 63 ISAT 41 252 CREATE 41 MESSAGE 139 DONE;
+	X BOTTL: ADJECT1 YELLO PRESENT 43 ZERO 123 MESSAGE 32 DONE;
+	X BOTTL: ADJECT1 YELLO PRESENT 43 NOTZERO 123 MESSAGE 37 DONE;
+	X BOTTL: ADJECT1 PURPL PRESENT 44 ZERO 124 MESSAGE 32 DONE;
+	X BOTTL: ADJECT1 PURPL PRESENT 44 NOTZERO 124 MESSAGE 37 DONE;
+	X BOTTL: MESSAGE 51 DONE;
+	X BEAKE: PRESENT 45 ZERO 122 MESSAGE 37 DONE;
+	X BEAKE: PRESENT 45 EQ 122 2 MESSAGE 32 ZERO 126 SYSMESS 68 DONE;
+	X BEAKE: PRESENT 45 EQ 122 1 MESSAGE 70 DONE;
+	X BEAKE: PRESENT 45 EQ 122 2 NOTZERO 126 SYSMESS 69 DONE;
+	X BODY: PRESENT 50 MES 119 SYSMESS 92;
+	X BODY: PRESENT 50 ZERO 129 ISAT 51 252 MESSAGE 120;
+	X BODY: PRESENT 50 ISAT 49 252 CREATE 49 MESSAGE 139 PLUS 30 2 DONE;
+	X BODY: PRESENT 50 DONE;
+	X BATTE: PRESENT 47 SYSMESS 98 DONE;
+	X TAPE: PRESENT 48 EXTERN 12 DONE;
+	X WALLE: PRESENT 49 MESSAGE 147 DONE;
+	X WARDR: AT 62 ZERO 130 MESSAGE 86 DONE;
+	X WARDR: AT 62 NOTZERO 130 MESSAGE 85 NOTZERO 131 MESSAGE 108 DONE;
+	X WARDR: AT 62 DONE;
+	X BED: AT 62 SYSMESS 75 DONE;
+	X HANDK: PRESENT 53 SYSMESS 84 DONE;
+	X LOCK: PRESENT 52 MESSAGE 30 DONE;
+	X HEADB: PRESENT 9 MESSAGE 74 DONE;
+	X COMPA: ADVERB CAREF AT 23 NOTZERO 136 CREATE 9 MESSAGE 139 PLUS 30 2 DONE;
+	X COMPA: AT 23 NOTZERO 136 MESSAGE 37 DONE;
+	X BOOK: PRESENT 54 MESSAGE 191 DONE;
+	X _: CHANCE 50 SYSMESS 54 DONE;
+	X _: MESSAGE 128 DONE;
+	SAY _: PROCESS 8 DONE;
+	SAY _: AT 30 EQ 138 128 MESSAGE 160 CLEAR 138 DONE;
+	LISTE NOISE: AT 18 SYSMESS 111 DONE;
+	LISTE MUSIC: AT 27 MESSAGE 99 DONE;
+	LISTE MUSIC: AT 6 MESSAGE 99 DONE;
+	SIT CHAIR: AT 6 ISAT 8 252 MESSAGE 109 MESSAGE 139 CREATE 8 PLUS 30 2 DONE;
+	SIT _: SET 141 OK;
+	SIT _: OK;
+	TURN FLASH: LET 33 55 PROCESS 5 DONE;
+	TURN WHEEL: AT 2 ZERO 60 ZERO 199 SYSMESS 114 DONE;
+	TURN WHEEL: AT 2 ZERO 60 NOTZERO 199 SYSMESS 15 SET 60 MESSAGE 26 DONE;
+	TURN WIRE: AT 5 EQ 76 255 MESSAGE 79 SET 101 DONE;
+	TURN TAP: PRESENT 39 ZERO 114 SET 114 OK;
+	TURN TAP: PRESENT 39 NOTZERO 114 CLEAR 114 OK;
+	L TABLE: AT 18 PREP UNDER ISAT 20 252 MESSAGE 112 DONE;
+	L _: PLUS 29 128 DESC;
+	UNSCR PANEL: AT 14 CARRIED 4 ZERO 91 SET 91 MESSAGE 127 CREATE 6 PLACE 6 17 DONE;
+	HELP _: MESSAGE 198 DONE;
+	UNLOC CABIN: AT 19 CARRIED 26 SET 86 DESTROY 26 PLUS 30 2 OK;
+	UNLOC DOOR: AT 23 NOTZERO 109 CARRIED 37 CLEAR 109 OK;
+	UNLOC DOOR: AT 64 ZERO 120 CARRIED 8 SET 120 OK;
+	PUSH SHUTT: AT 4 NOTZERO 220 ZERO 221 SET 221 MESSAGE 203 DONE;
+	PUSH BUTTO: AT 4 MESSAGE 96 DONE;
+	PUSH BUTTO: AT 21 MESSAGE 96 DONE;
+	PUSH TABLE: AT 21 MESSAGE 113 DONE;
+	TURNS _: SYSMESS 96 PRINT 31 SYSMESS 110 PRINT 30 NEWLINE DONE;
+	KICK CONTA: AT 28 PRESENT 22 EQ 93 128 SET 93 MESSAGE 138 CREATE 13 PLUS 30 2 DONE;
+	FILL VASE: AT 18 CARRIED 1 NOTZERO 114 MESSAGE 89 SWAP 1 38 DONE;
+	FILL SYRIN: NOUN2 BEAKE CARRIED 41 PRESENT 45 NOTZERO 122 COPYFF 122 127 CLEAR 122 PLUS 30 2 OK;
+	CLIMB D: AT 14 EQ 91 255 GOTO 17 DESC DONE;
+	CLIMB DESK: PROCESS 6;
+	CLIMB LADDE: AT 17 GOTO 14 DESC DONE;
+	PULL SHUTT: AT 4 ZERO 220 ZERO 221 SET 220 MESSAGE 202 DONE;
+	PULL PLATE: AT 10 ZERO 66 PLUS 97 1 MESSAGE 52 EQ 97 3 SET 66 INK 6 MESSAGE 54 CREATE 11 SET 67 INK 7 PLUS 30 2 DONE;
+	PULL PLATE: AT 10 ZERO 66 NOTEQ 97 3 INK 6 MESSAGE 53 INK 7 DONE;
+	PULL PANEL: AT 14 EQ 91 0 MESSAGE 9 DONE;
+	INSER DISK: NOUN2 DRIVE ZERO 87 SET 87 DESTROY 23 MESSAGE 114 DONE;
+	INSER CHUCK: NOUN2 HOLE AT 2 CARRIED 58 ZERO 199 DESTROY 58 SET 199 PLACE 58 0 OK;
+	INSER PASS: AT 7 CARRIED 10 EQ 62 255 ISNOTAT 10 252 SET 68 MESSAGE 58 DESTROY 10 DONE;
+	INSER PASS: AT 7 CARRIED 10 EQ 62 0 ISNOTAT 10 252 MESSAGE 43 END;
+	INSER CUTTE: NOUN2 SLOT WHATO SYSMESS 44 MESSAGE 133 SET 198 PLACE 20 0 DONE;
+	INSER WIRE: AT 5 CARRIED 12 NOUN2 KEYHO EQ 69 255 MESSAGE 78 SET 76 DESTROY 12 DONE;
+	INSER WIRE: NOUN2 KEYHO AT 23 NOTZERO 109 CARRIED 12 MESSAGE 180 DONE;
+	INSER CREDI: NOUN2 PHONE CARRIED 35 AT 30 SET 171 DESTROY 35 OK;
+	INSER PENCI: NOUN2 KEYHO AT 23 NOTZERO 109 ZERO 110 MESSAGE 181 DONE;
+	INSER PENCI: NOUN2 KEYHO AT 23 NOTZERO 109 NOTZERO 110 EQ 111 128 SET 111 MESSAGE 182 PLUS 30 2 DONE;
+	INSER PENCI: NOUN2 KEYHO AT 23 NOTZERO 109 NOTZERO 110 ZERO 111 MESSAGE 182 DONE;
+	INSER BATTE: NOUN2 FLASH CARRIED 47 CARRIED 2 DESTROY 47 PLUS 30 2 OK;
+	BEND WIRE: CARRIED 12 ZERO 69 SET 69 MESSAGE 62 PLUS 30 5 DONE;
+	TYPE 02927: PRESENT 52 ZERO 133 SET 133 SYSMESS 15 PLUS 30 2 SYSMESS 91 DONE;
+	TYPE _: PROCESS 4;
+	WAIT _: OK;
+	CALL 71513: AT 30 NOTZERO 171 NOTEQ 138 128 MESSAGE 159 LET 138 128 DONE;
+	CALL 71513: AT 30 ZERO 171 SYSMESS 86 DONE;
+	CALL _: AT 30 ZERO 115 SYSMESS 86 DONE;
+	CALL _: AT 30 NOTEQ 34 135 MESSAGE 163 DONE;
+	SWITC FLASH: PROCESS 5;
+	CUT CARPE: AT 18 CARRIED 14 ABSENT 15 ABSENT 16 MESSAGE 87 CREATE 16 PLUS 30 2 DONE;
+	CUT CONTA: PRESENT 22 EQ 88 255 CARRIED 20 EQ 93 0 LET 93 128 MESSAGE 137 PLUS 30 2 DONE;
+	OPEN TRAP: AT 18 PRESENT 16 SWAP 15 16 OK;
+	OPEN CONTA: PRESENT 22 ZERO 93 MESSAGE 57 DONE;
+	OPEN CASE: AT 27 PRESENT 18 MESSAGE 57 DONE;
+	OPEN CASE: PRESENT 52 MESSAGE 57 DONE;
+	OPEN AIRLO: AT 2 ZERO 95 SYSMESS 79 DONE;
+	OPEN AIRLO: AT 2 ZERO 65 NOTZERO 95 WORN 24 MESSAGE 131 SET 65 DONE;
+	OPEN AIRLO: AT 22 ZERO 107 SET 107 MESSAGE 131 DONE;
+	OPEN AIRLO: AT 44 ZERO 107 WORN 24 MESSAGE 131 SET 107 DONE;
+	OPEN AIRLO: AT 44 ZERO 107 MESSAGE 131 PROCESS 18;
+	OPEN AIRLO: AT 55 SYSMESS 79 DONE;
+	OPEN AIRLO: AT 2 NOTZERO 95 ZERO 65 MESSAGE 131 PROCESS 18;
+	OPEN AIRLO: AT 24 ZERO 65 SET 65 MESSAGE 131 DONE;
+	OPEN LOCKE: AT 2 PRESENT 32 DESTROY 32 CREATE 31 OK;
+	OPEN DRAWE: AT 23 ZERO 112 SET 112 SYSMESS 66 DONE;
+	OPEN WARDR: AT 62 ZERO 130 SET 130 OK;
+	CLOSE TRAP: AT 18 PRESENT 15 SWAP 15 16 OK;
+	CLOSE AIRLO: AT 2 EQ 65 255 CLEAR 65 MESSAGE 141 DONE;
+	CLOSE AIRLO: AT 44 NOTZERO 107 CLEAR 107 MESSAGE 141 DONE;
+	CLOSE AIRLO: AT 22 NOTZERO 107 CLEAR 107 MESSAGE 141 DONE;
+	CLOSE AIRLO: AT 24 NOTZERO 65 CLEAR 65 MESSAGE 141 DONE;
+	CLOSE LOCKE: AT 2 PRESENT 31 DESTROY 31 CREATE 32 OK;
+	CLOSE WARDR: AT 62 NOTZERO 130 CLEAR 130 NOTZERO 131 SET 132 OK;
+	CLOSE WARDR: AT 62 ZERO 131 OK;
+	DRINK WATER: CARRIED 38 SWAP 38 1 MESSAGE 122 DONE;
+	DRINK WATER: PRESENT 39 NOTZERO 114 MESSAGE 122 DONE;
+	HIT GLASS: PROCESS 13 DONE;
+	HIT PANEL: AT 21 ZERO 108 CARRIED 21 SET 108 MESSAGE 174 PLUS 30 2 DONE;
+	HIT PANEL: AT 21 ZERO 108 MESSAGE 58 DONE;
+	HIT CASE: PROCESS 13 DONE;
+	HIT VASE: PROCESS 13 DONE;
+	JUMP DESK: PROCESS 6;
+	MODE _: ZERO 134 SET 134 MODE 1 1 CLS DESC DONE;
+	MODE _: NOTZERO 134 CLEAR 134 MODE 4 1 CLS DESC DONE;
+	LIFT SHUTT: AT 4 NOTZERO 221 ZERO 222 SET 222 OK;
+	PUNCH CASE: PRESENT 18 MESSAGE 65 DONE;
+	BURN FILES: AT 20 PRESENT 3 CARRIED 28 DESTROY 3 CREATE 30 MESSAGE 166 LET 5 3 SET 102 PLUS 30 2 DONE;
+	BURN FILES: NOTAT 20 PLACE 3 0 CREATE 29 MESSAGE 166 MESSAGE 167 DONE;
+	BURN _: WHATO EQ 54 254 CARRIED 28 SYSMESS 113 DONE;
+	BURN _: SYSMESS 8 DONE;
+	SLIDE SHEET: AT 23 NOTZERO 109 NOUN2 DOOR CARRIED 33 LET 111 128 SYSMESS 63 PLACE 33 23 DONE;
+	POUR *: ADJECT1 YELLO NOUN2 BEAKE CARRIED 43 ZERO 123 PRESENT 45 PLUS 122 1 SET 123 OK;
+	POUR *: ADJECT1 PURPL NOUN2 BEAKE CARRIED 44 ZERO 124 PRESENT 45 PLUS 122 1 SET 124 OK;
+	POUR *: ADJECT1 YELLO NOUN2 SYRIN PRESENT 43 PRESENT 41 MESSAGE 81 DONE;
+	POUR *: ADJECT1 PURPL NOUN2 SYRIN PRESENT 44 PRESENT 41 MESSAGE 81 DONE;
+	POUR WATER: NOUN2 CIRCU AT 57 CARRIED 38 SYSMESS 104 DESTROY 38 CREATE 46 ANYKEY MESSAGE 94 SET 115 PLUS 30 2 DONE;
+	POUR WATER: CARRIED 38 DESTROY 38 CREATE 1 PLACE 1 254 OK;
+	POUR BOTTL: ADJECT1 YELLO CARRIED 43 ZERO 123 SET 123 MESSAGE 83 DONE;
+	POUR BOTTL: ADJECT1 PURPL CARRIED 44 ZERO 124 SET 124 MESSAGE 83 DONE;
+	POUR BEAKE: CARRIED 45 NOTZERO 83 MESSAGE 83 CLEAR 83 DONE;
+	FORGE SIGNA: CARRIED 36 CARRIED 33 ZERO 113 SET 113 PLUS 30 2 OK;
+	INJEC MAN: CARRIED 41 AT 61 ZERO 121 PROCESS 7;
+	MIX BEAKE: CARRIED 45 MESSAGE 82 EQ 122 2 SET 126 DONE;
+	STAND _: CLEAR 141 OK;
+	RELEA CATCH: AT 23 ZERO 136 SET 136 SYSMESS 108 CREATE 42 PLUS 30 2 DONE;
+	ANSWE PHONE: AT 1 EXTERN 14 DONE;
+	FASTE BELT: ATGT 71 ATLT 74 NOTZERO 141 SET 142 OK;
+	RUB BODY: NOUN2 HANDK PRESENT 50 CARRIED 53 SET 151 OK;
+	RUB WARDR: AT 62 NOUN2 HANDK CARRIED 53 SET 150 OK;
+	FONT _: ZERO 197 SET 197 CHARSET 0 DESC DONE;
+	FONT _: NOTZERO 197 CLEAR 197 CHARSET 1 DESC DONE;
+	SHARP PENCI: CARRIED 36 CARRIED 14 ZERO 110 SET 110 PLUS 30 2 OK;
+	TEXT _: ZERO 253 SET 253 CHARSET 0 DESC DONE;
+	TEXT _: NOTZERO 253 CLEAR 253 CHARSET 1 DESC DONE;
+	FOLLO MAN: AT 60 WORN 27 NOTZERO 117 MESSAGE 64 ANYKEY GOTO 59 SET 118 DESC DONE;
+	FOLLO MAN: AT 60 NOTWORN 27 NOTZERO 117 MESSAGE 3 DONE;
+	CONNE _: AT 17 PROCESS 11 DONE;
+	CRAWL _: NOTAT 23 PROCESS 12;
+	HIDE DESK: AT 23 SET 105 MESSAGE 169 DONE;
+}
+
+PROCESS 1
+{
+	* *: AT 61 ZERO 121 MESSAGE 140;
+	* *: AT 60 NOTZERO 116 MESSAGE 7;
+	* *: AT 1 SYSMESS 88 SYSMESS 89;
+	* *: ATGT 62 ATLT 65 SYSMESS 115;
+	* *: ATGT 67 ATLT 71 MES 41 SYSMESS 90 MESSAGE 186;
+	* *: AT 73 MES 35 MESSAGE 39;
+	* *: AT 72 MES 35 MESSAGE 31;
+	* *: ATGT 57 ATLT 60 MES 41 SYSMESS 109 MES 186;
+	* *: AT 20 SYSMESS 88;
+	* *: AT 70 SYSMESS 71;
+	* *: ATGT 64 ATLT 68 MES 41 SYSMESS 109 MESSAGE 186;
+	* *: AT 57 SYSMESS 103;
+	* *: AT 26 SYSMESS 103;
+	* *: AT 46 SYSMESS 102;
+	* *: AT 59 NOTZERO 118 MESSAGE 23;
+	* *: ATGT 48 ATLT 55 MESSAGE 98;
+	* *: ATGT 31 ATLT 44 MESSAGE 156;
+	* *: AT 51 SYSMESS 102;
+	* *: AT 12 ZERO 70 MESSAGE 158;
+	* *: AT 13 NOTZERO 87 SYSMESS 60 SYSMESS 60 EXTERN 3;
+	* *: AT 13 ZERO 87 EXTERN 5;
+	* *: AT 0 PRINTAT 6 10 MES 132 CHARSET 1 ABILITY 4 7 ANYKEY LET 26 255 CLS PICTURE 0 CLS PICTURE 1 EXTERN 200 GOTO 2 LET 99 7 MODE 4 1 LET 53 64 DESC;
+	* *: AT 2 EQ 60 255 MES 26;
+	* *: AT 10 EQ 67 0 MES 100;
+	* *: AT 10 EQ 67 255 MES 101;
+	* PANEL: AT 14 ZERO 91 MES 117;
+	* _: NEWLINE ZERO 0 ABSENT 0 NEWLINE PROTECT LISTOBJ DONE;
+	* _: PRESENT 0 NEWLINE PROTECT LISTOBJ DONE;
+}
+
+PROCESS 2
+{
+	* *: NOTZERO 160 MINUS 160 1 ZERO 160 PAUSE 50 MESSAGE 190 ABILITY 4 7;
+	* *: ATGT 71 ATLT 74 EQ 200 255 ZERO 141 MES 152 MESSAGE 153;
+	* *: ATGT 71 ATLT 74 NOTZERO 141 ZERO 142 EQ 200 255 MES 152 MESSAGE 154;
+	* *: ATGT 71 ATLT 74 EQ 200 255 NOTZERO 142 ANYKEY CLS MESSAGE 155 ANYKEY PROCESS 15;
+	* *: ATGT 71 ATLT 74 NOTEQ 200 255 PLUS 200 1 EQ 200 6 MESSAGE 111 SET 200;
+	* *: AT 25 PLUS 128 1 EQ 128 7 PAUSE 70 CLS PAUSE 50 MESSAGE 69 PAUSE 100 MESSAGE 103 PAUSE 100 MESSAGE 118 PAUSE 100 PROCESS 14;
+	* *: EQ 117 128 SET 117;
+	* *: AT 60 ZERO 117 MINUS 116 1 ZERO 116 LET 117 128 MESSAGE 21 ANYKEY MESSAGE 12;
+	* *: AT 22 PROCESS 18;
+	* *: AT 2 EQ 65 255 PROCESS 18;
+	* *: AT 23 EQ 8 1 MESSAGE 168;
+	* *: AT 23 ZERO 106 ZERO 8 NOTZERO 105 MES 170 MESSAGE 172 SET 106 SET 109 MESSAGE 184 ANYKEY DESC DONE;
+	* *: AT 23 ZERO 8 ZERO 105 MESSAGE 170 MESSAGE 171 PROCESS 9;
+	* *: ATGT 31 ATLT 44 PROCESS 18;
+	* *: AT 7 EQ 99 7 PLUS 100 1 EQ 100 4 MESSAGE 0 MESSAGE 25 PROCESS 9;
+	* *: AT 28 CHANCE 25 MESSAGE 142 DONE;
+	* *: AT 61 ZERO 121 PLUS 119 1 EQ 119 2 SYSMESS 94 MESSAGE 27 MESSAGE 25 PROCESS 9;
+	* *: AT 44 NOTZERO 107 PROCESS 18;
+	* *: AT 44 NOTZERO 107 PROCESS 18;
+	* *: AT 24 PROCESS 18;
+	SECUR _: AT 63 ZERO 108 PLUS 196 1 EQ 196 3 NEWLINE MESSAGE 168;
+	SECUR _: AT 63 EQ 196 5 MESSAGE 218 PROCESS 9;
+	BURN FILES: EQ 102 255 EQ 11 0 EQ 5 0 AT 20 MESSAGE 165 CLEAR 102 PROCESS 9;
+	BURN FILES: EQ 102 255 NOTAT 20 EQ 5 0 EQ 11 0 DESTROY 3 CREATE 29 PLACE 29 20 PLACE 30 0 CLEAR 102 LET 99 0;
+}
+
+PROCESS 3
+{
+	WEAR ALL: DOALL 254 DONE;
+	WEAR SUIT: WORN 24 CARRIED 7 MESSAGE 24 DONE;
+	WEAR SUIT: WORN 7 CARRIED 24 MESSAGE 24 DONE;
+	WEAR UNIFO: CARRIED 27 WORN 7 MESSAGE 24 DONE;
+	WEAR UNIFO: CARRIED 27 WORN 24 MESSAGE 24 DONE;
+	WEAR HEADB: CARRIED 9 ZERO 137 AUTOW ABILITY 4 8 SET 137 MESSAGE 75 LET 160 5 PLUS 30 2 DONE;
+	WEAR HEADB: AUTOW MESSAGE 96 DONE;
+	WEAR _: AUTOW DONE;
+}
+
+PROCESS 4
+{
+	TYPE KG1B2: ZERO 72 AT 12 PREP Q8T8D NOUN2 BQP7U MESSAGE 67 SET 70 SET 72 ANYKEY CLS DESC DONE;
+	TYPE _: AT 12 PARSE MESSAGE 68 DONE;
+	_ KG1B2: ZERO 72 PREP Q8T8D NOUN2 BQP7U SET 70 MESSAGE 67 SET 72 ANYKEY CLS DESC DONE;
+	_ _: ZERO 72 AT 12 MESSAGE 68 DONE;
+	_ _: AT 12 EQ 72 255 MESSAGE 74 DONE;
+}
+
+PROCESS 5
+{
+	SWITC FLASH: PREP ON AT 16 PRESENT 2 ISAT 47 252 SWAP 2 0 SET 80 GOTO 19 DESC DONE;
+	SWITC FLASH: PREP OFF AT 19 PRESENT 0 SWAP 0 2 CLEAR 80 GOTO 16 DESC DONE;
+	SWITC FLASH: PREP ON PRESENT 2 ISAT 47 252 SWAP 2 0 SET 80 OK;
+	SWITC FLASH: PREP OFF PRESENT 0 SWAP 0 2 CLEAR 80 OK;
+	SWITC FLASH: PREP ON CARRIED 2 ISNOTAT 47 252 MESSAGE 96 DONE;
+	SWITC FLASH: PREP ON PRESENT 0 MESSAGE 96 DONE;
+	SWITC FLASH: PREP OFF PRESENT 2 MESSAGE 96 DONE;
+	SWITC FLASH: SYSMESS 8 DONE;
+}
+
+PROCESS 6
+{
+	GO DESK: LET 33 48 PROCESS 6;
+	CLIMB DESK: AT 4 NOTZERO 222 EQ 80 0 GOTO 16 DESC DONE;
+	CLIMB DESK: AT 4 NOTZERO 222 EQ 80 255 GOTO 19 DESC DONE;
+	CLIMB DESK: AT 16 GOTO 4 DESC DONE;
+	CLIMB DESK: AT 19 GOTO 4 DESC DONE;
+	CLIMB DESK: ZERO 222 MESSAGE 204 DONE;
+	JUMP DESK: LET 33 48 PROCESS 6;
+}
+
+PROCESS 7
+{
+	INJEC MAN: EQ 127 0 MESSAGE 151 ANYKEY SYSMESS 78 MESSAGE 27 MESSAGE 25 PROCESS 9;
+	INJEC MAN: EQ 127 1 MESSAGE 151 MESSAGE 164 SYSMESS 76 MESSAGE 25 PROCESS 9;
+	INJEC MAN: EQ 127 2 ZERO 126 CLEAR 127 PROCESS 7;
+	INJEC MAN: EQ 127 2 NOTZERO 126 MESSAGE 151 SYSMESS 62 SET 121 CLEAR 127 CREATE 50 PLUS 30 2 DONE;
+}
+
+PROCESS 8
+{
+	SAY *: PARSE AT 30 EQ 138 128 MESSAGE 160 CLEAR 138 DONE;
+	_ WILKE: ZERO 140 AT 30 EQ 138 128 MESSAGE 161 CLEAR 138 SET 139 SET 140 PLUS 30 2 DONE;
+	_ WILKE: NOTZERO 140 AT 30 EQ 138 128 MESSAGE 162 CLEAR 138 DONE;
+	_ _: AT 30 EQ 138 128 MESSAGE 160 CLEAR 138 DONE;
+	_ _: NOTAT 47 NOTAT 7 NOTEQ 138 128 SYSMESS 8 DONE;
+	_ _: SYSMESS 116 DONE;
+}
+
+PROCESS 9
+{
+	* *: MESSAGE 6 ANYKEY GOTO 0 DROPALL GOTO 25 DESC DONE;
+}
+
+PROCESS 10
+{
+	* AIRLO: EQ 33 255 NOUN2 OVERR PREP OFF SET 95 SYSMESS 60 EXTERN 10 PAUSE 200 EXTERN 11 ANYKEY CLS DESC DONE;
+	* AIRLO: EQ 33 255 NOUN2 OVERR PREP ON CLEAR 95 SYSMESS 60 EXTERN 10 PAUSE 200 EXTERN 11 ANYKEY CLS DESC DONE;
+	SECUR SYSTE: SYSMESS 60 EXTERN 9 ANYKEY DESC DONE;
+	MENU LEVEL: LET 33 18 LET 34 123 PROCESS 10 DONE;
+	COMMA _: SYSMESS 60 EXTERN 7 ANYKEY CLS DESC DONE;
+	INCOM FLIGH: NOUN2 DATA SYSMESS 60 EXTERN 8 ANYKEY CLS DESC DONE;
+	OUTGO FLIGH: LET 33 43 PROCESS 10 DONE;
+	EXIT _: INPUT 4 GOTO 19 DESC DONE;
+	_ _: CLS DESC DONE;
+}
+
+PROCESS 11
+{
+	CONNE 4: NOUN2 5 MESSAGE 216 ISAT 20 0 SET 88 DONE;
+	CONNE 4: NOUN2 5 ISNOTAT 20 0 DONE;
+	CONNE 5: NOUN2 4 LET 34 180 LET 44 181 PROCESS 11;
+	CONNE _: GT 34 176 LT 34 185 GT 44 176 LT 44 185 MESSAGE 217 PROCESS 14;
+	_ _: SYSMESS 8 DONE;
+}
+
+PROCESS 12
+{
+	CRAWL S: AT 8 GOTO 9 DESC DONE;
+	CRAWL S: AT 14 GOTO 26 DESC DONE;
+	CRAWL S: AT 9 GOTO 57 DESC DONE;
+	CRAWL S: AT 57 GOTO 26 DESC DONE;
+	CRAWL E: AT 9 GOTO 10 DESC DONE;
+	CRAWL E: AT 8 GOTO 26 DESC DONE;
+	CRAWL E: AT 14 GOTO 9 DESC DONE;
+	CRAWL E: AT 57 GOTO 26 DESC DONE;
+	CRAWL W: AT 10 GOTO 9 DESC DONE;
+	CRAWL W: AT 8 GOTO 26 DESC DONE;
+	CRAWL W: AT 9 GOTO 14 DESC DONE;
+	CRAWL W: AT 14 GOTO 26 DESC DONE;
+	CRAWL W: AT 57 GOTO 26 DESC DONE;
+	CRAWL N: AT 9 GOTO 8 DESC DONE;
+	CRAWL N: AT 8 GOTO 2 DESC DONE;
+	CRAWL N: AT 14 GOTO 26 DESC DONE;
+	CRAWL N: AT 57 GOTO 9 DESC DONE;
+	CRAWL D: AT 14 EQ 91 255 GOTO 17 DESC DONE;
+	CRAWL U: AT 17 GOTO 14 DESC DONE;
+	CRAWL _: AT 26 LT 34 6 NOTEQ 34 3 GOTO 26 DESC DONE;
+	CRAWL _: AT 26 EQ 34 3 GOTO 8 DESC DONE;
+	CRAWL _: LT 34 14 SYSMESS 7 DONE;
+	CRAWL _: MESSAGE 34 DONE;
+}
+
+PROCESS 13
+{
+	HIT CASE: AT 27 PRESENT 18 NOUN2 HAMME CARRIED 34 DESTROY 18 CREATE 19 CREATE 21 MESSAGE 55 PLUS 30 2 DONE;
+	HIT CASE: AT 27 PRESENT 18 EQ 44 255 MESSAGE 58 DONE;
+	HIT CASE: AT 27 PRESENT 18 MESSAGE 65 DONE;
+	HIT VASE: LET 34 111 PROCESS 13 DONE;
+}
+
+PROCESS 14
+{
+	* *: SYSMESS 0 SYSMESS 96 PRINT 31 SYSMESS 110 PRINT 30 NEWLINE END;
+}
+
+PROCESS 15
+{
+	* *: ZERO 132 SYSMESS 72 ANYKEY PROCESS 9;
+	* *: NOTWORN 51 SYSMESS 72 ANYKEY PROCESS 9;
+	* *: NOTZERO 132 WORN 51 PROCESS 16;
+}
+
+PROCESS 16
+{
+	* *: ZERO 150 PLUS 143 1;
+	* *: ZERO 151 PLUS 143 1;
+	* *: NOTZERO 143 SYSMESS 77 ANYKEY MESSAGE 113 ANYKEY PROCESS 9;
+	* *: MESSAGE 146 SYSMESS 112 PLUS 30 2 ANYKEY CLS EXTERN 13 PROCESS 17;
+}
+
+PROCESS 17
+{
+	* *: MESSAGE 192;
+	* *: ABSENT 48 PAUSE 75 MES 193 MESSAGE 194 PAUSE 100 MESSAGE 195 ANYKEY PROCESS 14;
+	* *: PRESENT 48 PAUSE 75 MESSAGE 194 PAUSE 100 MESSAGE 196 LET 30 80 ANYKEY PROCESS 14;
+}
+
+PROCESS 18
+{
+	* *: NOTWORN 24 NOTWORN 7 SYSMESS 19 PROCESS 14;
+	* *: WORN 7 MESSAGE 20 SYSMESS 19 PROCESS 14;
+	* *: DONE;
+}
+
